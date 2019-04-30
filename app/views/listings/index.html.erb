@@ -8,11 +8,13 @@
     <th></th>
   </tr>
  
-  <% @listings.each do |item| %>
+  <% @listings.each do |listing| %>
     <tr>
-      <td><%= item.title %></td>
-      <td><%= item.text %></td>
-      <td><%= link_to 'Show', listing_path(item) %></td>
+      <td><%= listing.title %></td>
+      <td><%= listing.description %></td>
+      <td><%= link_to 'Show', listing_path(listing) %></td>
     </tr>
   <% end %>
 </table>
+
+<%= link_to 'Back', welcome_index_path %>
