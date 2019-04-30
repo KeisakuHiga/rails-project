@@ -19,7 +19,7 @@ User.destroy_all
   listings = rand(6)
   listings.times do
     params = {
-      title: Faker::WorldCup.group,
+      title: Faker::Name.first_name,
       description: Faker::Lorem.paragraph,
       amount: Faker::Number.decimal(6, 2),
       user_id: user.id
