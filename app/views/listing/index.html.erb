@@ -1,0 +1,18 @@
+
+<h1>List</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th></th>
+  </tr>
+ 
+  <% @listings.each do |item| %>
+    <tr>
+      <td><%= item.title %></td>
+      <td><%= item.text %></td>
+      <td><%= link_to 'Show', listing_path(item) %></td>
+    </tr>
+  <% end %>
+</table>
