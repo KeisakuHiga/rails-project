@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'welcome/index'
   get '/listings', to: 'listings#index', as: 'listings'
   post "/listings", to: "listings#create"
   get "/new", to: "listings#new", as: "new_listings"
