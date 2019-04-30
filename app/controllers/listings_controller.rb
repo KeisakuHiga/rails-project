@@ -13,7 +13,7 @@ class ListingsController < ApplicationController
   end
 
   def new
-    @listing = Lisnting.new
+    @listing = Listing.new
     # @listing = current_user.listings.build
   end
   
