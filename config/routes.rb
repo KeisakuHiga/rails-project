@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  get 'listing/index'
-  get 'listing/new'
-  get 'listing/show'
-  get 'listing/createdelete'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/listings', to: 'listings#index', as: 'listings'
+  post "/listings", to: "listings#create"
+  get "/new", to: "listings#new", as: "new_listings"
+  get "/listings/:id", to: "listings#show", as: "listing"
+  root 'welcome#index'
+
 end
