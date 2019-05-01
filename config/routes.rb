@@ -14,5 +14,5 @@ Rails.application.routes.draw do
   get "/listings/:id/edit", to: "listings#edit", as: "edit_listing"
 
   
-
+  
 end
