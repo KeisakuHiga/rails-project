@@ -1,0 +1,15 @@
+<p>
+  <strong>Interest:</strong>
+  <%= offer.interest %>
+</p>
+ 
+<p>
+  <strong>Comment:</strong>
+  <%= offer.description %>
+</p>
+
+<p>
+  <%= link_to 'Destroy Offer', [offer.listing, offer],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>
