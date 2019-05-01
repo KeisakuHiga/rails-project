@@ -18,9 +18,9 @@ class ListingsController < ApplicationController
   end
 
   def update
-    @linsting = Linsting.find(params[:id])
+    @listing = Listing.find(params[:id])
     
-    if @linsting.update(linsting_params)
+    if @listing.update(listing_params)
       redirect_to @listing
     else
       render 'edit'
