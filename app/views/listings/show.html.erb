@@ -19,7 +19,7 @@
   </p>
   <%= link_to "Edit #{@listing.title}", edit_listing_path %>
   <%= link_to "Destroy #{@listing.title}", @listing,
-              method: :destroy,
+              method: :delete,
               data: { confirm: 'Are you sure you want to delete ' + @listing.title } %>
 
 </div>

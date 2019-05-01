@@ -6,49 +6,40 @@ class OffersController < ApplicationController
   # end
   
   def create
-    # @user = User.find(params[:id])
-    # @user = User.find(24)
     @listing = Listing.find(params[:listing_id])
-    @offer = @listing.offers.new(offer_params)
+    @offer = @listing.offers.create(offer_params)
     @offer.user_id = current_user.id 
-    
     if @offer.save
       flash[:notice] = "Your offer successfully saved!!!"
-      redirect_to listing_path(@listing)
+      redirect_to listing_path(@listing.id)
 
     else
-      flash[:notice] = "NOOOOOO!!!"
-      redirect_to listing_path(@listing)
+      flash[:notice] = "Saving failed"
+      redirect_to listing_path(@listing.id)
 
     end
   end
 
   def edit
-    @listing = Listing.find(params[:listing_id])
-    @offer = @listing.offers.find(params[:id])
+    @offer = Offer.find(params[:id])
   end
 
   def update
-    @listing = Listing.find(params[:listing_id])
-    @offer = @listing.offers.find(params[:id])
+    @offer = Offer.find(params[:id])
   
-    if offer.update(offer_params)
-      redirect_to @listing
+    if @offer.update(offer_params)
+      redirect_to listing_path(@offer.listing_id)
     else
       render 'edit'
     end
     
   end
 
-  def show
-      @offer = Offer.find(params[:id])
-  end
-
   def destroy
     @offer = Offer.find(params[:id])
     @offer.destroy
     flash.notice = "Your offer successfully deleted!!!"
-    redirect_to listing_path
+    redirect_to listing_path(@offer.listing.id)
   end
 
   private

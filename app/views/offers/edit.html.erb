@@ -1,0 +1,12 @@
+<%= form_for @offer, url: edit_listing_offer_path(@offer.listing_id), html: {class: "edit-form"},:action => "update" do |form| %>
+
+  <%= form.label :interest %>
+  <%= form.text_field :interest %>
+
+  <%= form.label :description %>
+  <%= form.text_field :description %>
+
+  <%= form.submit 'Update offer', class: 'btn btn-primary' %>
+<% end %>
+
+<%= link_to "Back", :back  %>
