@@ -40,12 +40,15 @@ class OffersController < ApplicationController
     
   end
 
+  def show
+      @offer = Offer.find(params[:id])
+  end
+
   def destroy
-    @listing = Listing.find(params[:listing_id])
-    @offer = @listing.offers.find(params[:id])
+    @offer = Offer.find(params[:id])
     @offer.destroy
     flash.notice = "Your offer successfully deleted!!!"
-    redirect_to listing_path(@listing)
+    redirect_to listing_path
   end
 
   private

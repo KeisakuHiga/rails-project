@@ -13,6 +13,9 @@ Rails.application.routes.draw do
   delete "/listings/:id", to: "listing#destroy"
   get "/listings/:id/edit", to: "listings#edit", as: "edit_listing"
   patch "/listings/:id/edit", to: "listings#update"
+
+  delete "/listings/:id/offers/:id", to: "offers#destroy", as: "delete_offer"
+  
   # resources :users do
   #   resources :listings
   # end
