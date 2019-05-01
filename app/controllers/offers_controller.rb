@@ -23,6 +23,23 @@ class OffersController < ApplicationController
     end
   end
 
+  def edit
+    @listing = Listing.find(params[:listing_id])
+    @offer = @listing.offers.find(params[:id])
+  end
+
+  def update
+    @listing = Listing.find(params[:listing_id])
+    @offer = @listing.offers.find(params[:id])
+  
+    if offer.update(offer_params)
+      redirect_to @listing
+    else
+      render 'edit'
+    end
+    
+  end
+
   def destroy
     @listing = Listing.find(params[:listing_id])
     @offer = @listing.offers.find(params[:id])
