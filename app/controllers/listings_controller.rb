@@ -5,22 +5,27 @@ class ListingsController < ApplicationController
   end
 
   def new
-
-  end
-  
-  def show
-      @listing = Listing.find(params[:id])
-  end
-
-  def new
     # @listing = Listing.new
     @listing = current_user.listings.build
   end
   
   def show
       @listing = Listing.find(params[:id])
-    end
+  end
 
+  def edit
+    @listing = Listing.find(params[:id])
+  end
+
+  def update
+    @listing = Listing.find(params[:id])
+    
+    if @listing.update(listing_params)
+      redirect_to @listing
+    else
+      render 'edit'
+    end
+  end
 
   def create
     # @listing = Listing.new(listing_params)
