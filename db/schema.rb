@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_30_234600) do
+ActiveRecord::Schema.define(version: 2019_05_01_055757) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2019_04_30_234600) do
     t.datetime "updated_at", null: false
     t.integer "user_id"
     t.integer "amount"
+    t.boolean "status"
   end
 
   create_table "offers", force: :cascade do |t|
@@ -31,6 +32,7 @@ ActiveRecord::Schema.define(version: 2019_04_30_234600) do
     t.datetime "updated_at", null: false
     t.integer "user_id"
     t.integer "listing_id"
+    t.boolean "status"
   end
 
   create_table "users", force: :cascade do |t|
@@ -42,6 +44,15 @@ ActiveRecord::Schema.define(version: 2019_04_30_234600) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "admin"
+    t.boolean "user_type"
+    t.integer "mobile_number"
+    t.string "name"
+    t.string "address"
+    t.datetime "dob"
+    t.string "bank_name"
+    t.integer "account_number"
+    t.integer "bsb"
+    t.integer "driver_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
