@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   delete "/listings/:id", to: "listing#destroy"
   get "/listings/:id/edit", to: "listings#edit", as: "edit_listing"
   patch "/listings/:id/edit", to: "listings#update"
-  resources :listings
+  # resources :listings
   
 
 end
