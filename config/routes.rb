@@ -15,5 +15,4 @@ Rails.application.routes.draw do
   patch "/listings/:id/edit", to: "listings#update"
   # resources :listings
   
-
 end
