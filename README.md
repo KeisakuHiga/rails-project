@@ -28,15 +28,18 @@
 Answer: 
 	The problem we are addressing is for people who want quick loans in a competitive markertplace where loans sharks compete against each other for the lowest interest rate to offer the loan requester.
 
+
 2. Identify the problem you’re trying to solve by building this particular marketplace App? Why is it a problem that needs solving?
 
 Answer: 
 	The problem is that users can't get decent interest rates on there loans sometimes due to going to a single place for a loan. This solves that issue as they can get multiple loan offers and review them.
 
+
 3. Describe the project will you be conducting and how. your App will address the needs.
 
 Answer: 
 	The way the project works is there will be two user accounts, loan requesters and loan offereres. The loan requester puts up a "listing" of the amouunt they require, a financer will then offer there rates on the page against the other offerers. The requester then selects their favourite offer, pays the interest as a down payment then recieves the money.
+
 
 4. Describe the network infrastructure the App may be based on.
 
