@@ -28,14 +28,7 @@
 
 <div class="lenders-offers">
   <h1>Offers to <%= @listing.title %></h1>
-    <% @listing.offers.each do |offer| %>
-      <h2>
-        Offering Interest Rate: <%= offer.interest %>
-      </h2>
-      <h3>
-        Description: <%= offer.description %>
-      </h3>
-    <% end %>
+    <%= render @listing.offers %>
 
   <h2>Add your offer:</h2>
   <%= render 'offers/form' %>
