@@ -1,3 +1,5 @@
+<%= link_to "Edit #{@listing.title}", edit_listing_path %>
+
 <div class="borrower-request">
   <h1>
     Title: <%= @listing.title %>
@@ -25,12 +27,12 @@
 <div class="lenders-offers">
 <h1>Offers to <%= @listing.title %></h1>
   <% @listing.offers.each do |offer| %>
-  <h2>
-    Offering Interest Rate: <%= offer.interest %>
-  </h2>
-  <h3>
-    Description: <%= offer.description %>
-  </h3>
+    <h2>
+      Offering Interest Rate: <%= offer.interest %>
+    </h2>
+    <h3>
+      Description: <%= offer.description %>
+    </h3>
   <% end %>
 </div>
 
