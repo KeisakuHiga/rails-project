@@ -1,22 +1,19 @@
-
-<h1>List</h1>
- 
-<%= link_to 'Create a New List', new_listing_path %>
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-    <th></th>
-  </tr>
- 
-  <% @listings.each do |listing| %>
-    <tr>
-      <td><%= listing.title %></td>
-      <td><%= listing.description %></td>
-      <td><%= link_to 'Show', listing_path(listing) %></td>
-    </tr>
-  <% end %>
-</table>
-
-<%= link_to 'Back', welcome_index_path %>
+<div class="index-page">
+  <div class="bookshelf">
+    <% @listings.each do |listing| %>
+      <div class="book-card bg-light">
+        <div class="book-description">
+          <h4> <%= listing.title %></h4>
+          <h5>by <%= listing.title %></h5>
+          <p> Genre: <%= listing.description %></p>
+        </div>
+        <div class="index-page-nav-links">
+            <button><%= link_to "show", listing %></button>
+          <% if can? :delete, listing %>
+            <button><%= link_to "delete", update_listing_path(listing), method: :delete %></button>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
