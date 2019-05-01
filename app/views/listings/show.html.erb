@@ -1,12 +1,42 @@
+<%= link_to "Edit #{@listing.title}", edit_listing_path %>
 
-<p>
-  <strong>Title:</strong>
-  <%= @listing.title %>
-</p>
- 
-<p>
-  <strong>Description:</strong>
-  <%= @listing.description %>
-</p>
+<div class="borrower-request">
+  <h1>
+    Title: <%= @listing.title %>
+  </h1>
+
+  <h2>
+    <strong>Description:</strong>
+  </h2>
+  <p>
+    <%= @listing.description %>
+  </p>
+
+
+  <h2>
+    <strong>Request Amount</strong>
+  </h2>
+  <p>
+    AUD <%= @listing.amount %>
+  </p>
+
+</div>
+
+<br>
+
+<div class="lenders-offers">
+<h1>Offers to <%= @listing.title %></h1>
+  <% @listing.offers.each do |offer| %>
+    <h2>
+      Offering Interest Rate: <%= offer.interest %>
+    </h2>
+    <h3>
+      Description: <%= offer.description %>
+    </h3>
+  <% end %>
+</div>
+
+
+
 
 <%= link_to 'Back', listings_path %>
