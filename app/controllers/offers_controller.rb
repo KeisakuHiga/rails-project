@@ -1,11 +1,28 @@
 class OffersController < ApplicationController
-
+  # def new
+  #   @listing = Listing.find(params[:listing_id])
+  #   @offer = @listing.offers.build
+  #   respond_with(@offer)
+  # end
+  
   def create
+    # @user = User.find(params[:id])
+    # @user = User.find(24)
     @listing = Listing.find(params[:listing_id])
-    @offer = @listing.offers.create(offer_params)
-    flash[:notice] = "Your offer successfully saved!!!"
-    redirect_to listing_path(@listing)
+    @offer = @listing.offers.new(offer_params)
+    @offer.user_id = current_user.id 
+    
+    if @offer.save
+      flash[:notice] = "Your offer successfully saved!!!"
+      redirect_to listing_path(@listing)
+
+    else
+      flash[:notice] = "NOOOOOO!!!"
+      redirect_to listing_path(@listing)
+
+    end
   end
+
 
   private
     def offer_params
