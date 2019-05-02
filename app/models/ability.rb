@@ -9,10 +9,10 @@ class Ability
       user ||= User.new # guest user (not logged in)
       can :read, :all # permissions for every user, even if not logged in    
 
-    # if user.present?
-    #   can :manage, Listing if user.user_type == true
-    #   can :manage, Offer if user.user_type == false
-    # end
+    if user.user_type? 
+      can :manage, Listing
+
+    end
 
 
     if user.admin?
