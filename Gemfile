@@ -69,3 +69,6 @@ gem 'devise'
 gem 'cancancan'
 # Faker
 gem 'faker'
+# Stripe
+gem 'stripe'
+gem 'dotenv-rails', groups: [:development, :test]
