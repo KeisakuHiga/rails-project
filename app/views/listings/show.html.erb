@@ -17,12 +17,11 @@
   <p>
     AUD <%= @listing.amount %>
   </p>
-  <%# <% if can? :update, @listing %>
+
   <% if (user_signed_in? && current_user.id == @listing.user_id)%>
     <%= link_to "Edit #{@listing.title}", edit_listing_path %>
   <% end %>
 
-  <%# <% if can? :delete, @listing %>
   <% if (user_signed_in? && current_user.id == @listing.user_id) %>
   <%= link_to "Destroy #{@listing.title}", @listing,
               method: :delete,
