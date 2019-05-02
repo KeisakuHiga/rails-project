@@ -8,6 +8,36 @@
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
+      <div><%= f.label :name %><br />
+        <%= f.text_field :name, autofocus: true %></div>
+
+ <div><%= label :user_type, "Borrower"%>
+<%= f.radio_button :user_type, true, :value => true%></div>
+
+ <div><%= label :user_type, "Lender" %>
+      <%= f.radio_button :user_type, false , :checked => true , :value => false %></div>
+
+    <div><%= f.label :dob %><br />
+        <%= f.date_select :dob, :start_year => Date.current.year, :end_year => 1920 %></div>
+
+    <div><%= f.label :"Mobile Number" %><br />
+    <%= f.number_field :mobile_number, autofocus: true %></div>
+
+        <div><%= f.label :"Country" %><br />
+        <%= f.text_field :address, autofocus: true %></div>
+
+        <div><%= f.label :"Bank Name" %><br />
+        <%= f.text_field :bank_name, autofocus: true %></div>
+
+        <div><%= f.label :"Account Number" %><br />
+        <%= f.number_field :account_number, autofocus: true %></div>
+
+        <div><%= f.label :"BSB" %><br />
+        <%= f.number_field :bsb, autofocus: true %></div>
+
+        <div><%= f.label :"Drivers Liscense ID" %><br />
+        <%= f.number_field :driver_id, autofocus: true %></div>
+
   <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
