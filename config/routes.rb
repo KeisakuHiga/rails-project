@@ -6,11 +6,12 @@ Rails.application.routes.draw do
 
   # Listing has many offers
   resources :listings do
-    resources :offers
+    resources :offers do
+      # Stripe
+      resources :charges
+    end
   end
 
-  # Stripe
-  resources :charges
 
   # # listings
   # get "/listings", to: "listings#index", as: "listings"
