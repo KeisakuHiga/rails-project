@@ -19,7 +19,7 @@
   </p>
   <%= link_to "Edit #{@listing.title}", edit_listing_path %>
   <%= link_to "Destroy #{@listing.title}", @listing,
-              method: :destroy,
+              method: :delete,
               data: { confirm: 'Are you sure you want to delete ' + @listing.title } %>
 
 </div>
@@ -27,15 +27,10 @@
 <br>
 
 <div class="lenders-offers">
-  <h1>Offers to <%= @listing.title %></h1>
-    <% @listing.offers.each do |offer| %>
-      <h2>
-        Offering Interest Rate: <%= offer.interest %>
-      </h2>
-      <h3>
-        Description: <%= offer.description %>
-      </h3>
-    <% end %>
+  <h1>Offers</h1>
+  <%= render @listing.offers %>
+    
+
 
   <h2>Add your offer:</h2>
   <%= render 'offers/form' %>
