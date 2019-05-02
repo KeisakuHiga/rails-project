@@ -5,4 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :listings, dependent: :destroy
   has_many :offers, dependent: :destroy
+  validates :name, :dob, :bank_name, :account_number, :bsb, :driver_id, :mobile_number, :address, presence: true
 end
