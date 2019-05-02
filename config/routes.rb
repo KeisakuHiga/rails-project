@@ -3,9 +3,14 @@ Rails.application.routes.draw do
   
   root "welcome#index"
   get "welcome/index"
+
+  # Listing has many offers
   resources :listings do
     resources :offers
   end
+
+  # Stripe
+  resources :charges
 
   # # listings
   # get "/listings", to: "listings#index", as: "listings"
