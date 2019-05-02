@@ -8,6 +8,8 @@
   <%= offer.description %>
 </p>
 
+<%= render "layouts/shared/stripe_form" %>
+
 <p>
   <% if (user_signed_in? && current_user.id == offer.user_id) %>
     <%= link_to 'Edit your offer', edit_listing_offer_path(@listing, offer.id) %>
