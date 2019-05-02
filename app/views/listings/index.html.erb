@@ -1,4 +1,4 @@
-<% if current_user.user_type == true %>
+<% if can? :create, Listing %>
   <%= link_to 'Create a New List', new_listing_path %>
 <% end %>
 
