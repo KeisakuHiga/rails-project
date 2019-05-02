@@ -1,7 +1,11 @@
 <%= form_with(model: [ @listing, @listing.offers.build ], local: true) do |form| %>
   <p>
-    <%= form.label :interest %><br>
-    <%= form.text_field :interest %>
+    <%= form.label :interest_rate %><br>
+    <%= form.text_field :interest %> %
+  </p>
+  <p>
+    <%= form.label :term %><br>
+    <%= form.text_field :months %> months
   </p>
   <p>
     <%= form.label :description %><br>
