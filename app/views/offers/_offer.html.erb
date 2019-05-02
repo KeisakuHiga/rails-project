@@ -18,7 +18,9 @@
   <%= offer.description %>
 </p>
 
-<%= render "layouts/shared/stripe_form" %>
+<% if (user_signed_in? && current_user.id == @listing.user_id)%>
+  <%= render "layouts/shared/stripe_form" %>
+<% end %>
 
 <p>
   <% if (user_signed_in? && current_user.id == offer.user_id) %>
