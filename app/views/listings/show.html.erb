@@ -37,7 +37,7 @@
     
 
   <% if user_signed_in? %>
-    <% unless current_user.user_type == true && unless current_user.id == @listing.user_id%>  
+    <% unless current_user.user_type == true || unless current_user.id == @listing.user_id%>  
       <h2>Add your offer:</h2>
       <%= render 'offers/form' %>
     <% end %>
