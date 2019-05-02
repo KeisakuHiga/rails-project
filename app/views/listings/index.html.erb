@@ -10,9 +10,6 @@
         </div>
         <div class="index-page-nav-links">
             <button><%= link_to "show", listing %></button>
-          <% if can? :delete, listing %>
-            <button><%= link_to "delete", update_listing_path(listing), method: :delete %></button>
-          <% end %>
         </div>
       </div>
     <% end %>
