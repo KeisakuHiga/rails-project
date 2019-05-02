@@ -15,7 +15,7 @@
     <strong>Request Amount</strong>
   </h2>
   <p>
-    AUD <%= @listing.amount %>
+    AU<%= number_to_currency(@listing.amount) %>
   </p>
 
   <% if (user_signed_in? && current_user.id == @listing.user_id)%>
