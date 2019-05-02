@@ -36,9 +36,14 @@
   <%= render @listing.offers %>
     
 
-
-  <h2>Add your offer:</h2>
-  <%= render 'offers/form' %>
+  <% if user_signed_in? %>
+    <% unless current_user.id == @listing.user_id %>  
+      <h2>Add your offer:</h2>
+      <%= render 'offers/form' %>
+    <% end %>
+  <% else %>
+    <h2>You can add your offer after <%= link_to 'Sign Up', new_user_registration_path %> / <%= link_to 'Log in', new_user_session_path %>.</h2>
+  <% end %>
   
 </div>
 
