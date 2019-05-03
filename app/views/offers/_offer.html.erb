@@ -1,14 +1,26 @@
 <p>
-  <strong>Interest:</strong>
-  <%= offer.interest %>
+  <strong>Lender Name:</strong>
+  <%= offer.user.name %>
 </p>
  
+<p>
+  <strong>Interest:</strong>
+  <%= offer.interest %> %
+</p>
+ 
+<p>
+  <strong>Term:</strong>
+  <%= offer.months %> months
+</p>
+
 <p>
   <strong>Comment:</strong>
   <%= offer.description %>
 </p>
 
-<%= render "layouts/shared/stripe_form" %>
+<% if (user_signed_in? && current_user.id == @listing.user_id)%>
+  <%= render "layouts/shared/stripe_form" %>
+<% end %>
 
 <p>
   <% if (user_signed_in? && current_user.id == offer.user_id) %>
