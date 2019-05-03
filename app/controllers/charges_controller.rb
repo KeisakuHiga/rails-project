@@ -5,9 +5,14 @@ class ChargesController < ApplicationController
   
   def create
     # Amount in cents. This amount will be charged.
-    @user = User.find_by(params[:stripeEmail])
-    raise
-    @amount = 777
+    @listing = Listing.find(params[:listing_id])
+    listing_amount = @listing.amount
+
+    @offers = @listing.offers
+    offer = @offers.find(params[:offer_id])
+    offer_interest = offer.interst
+    offer_interest = offer.months
+    @amount = listing_amount * interst_interest * months / 12
   
     customer = Stripe::Customer.create({
       email: params[:stripeEmail],
