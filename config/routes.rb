@@ -1,6 +1,17 @@
 Rails.application.routes.draw do
-  devise_for :users, controllers: {registrations: 'users/registrations'}
+  devise_for :users, :controllers => {
+    :registrations => 'users/registrations',
+    :sessions => 'users/sessions',
+    :passwords => 'users/passwords'
+   }
+   
+   devise_scope :user do
+     get 'my_page' => 'users/registrations#my_page'
+   end
   
+  get "/users/show", to: "devise/sessions#show", as: "user_profile"
+
+
   root "welcome#index"
   get "welcome/index"
 
