@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
   devise_for :users, :controllers => {
     :registrations => 'users/registrations',
     :sessions => 'users/sessions',
@@ -9,9 +8,6 @@ Rails.application.routes.draw do
    devise_scope :user do
      get 'my_page' => 'users/registrations#my_page'
    end
-=======
-  devise_for :users, controllers: {registrations: 'users/registrations'}
->>>>>>> master
   
   get "/users/show", to: "devise/sessions#show", as: "user_profile"
 
