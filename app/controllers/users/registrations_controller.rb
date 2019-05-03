@@ -20,9 +20,12 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # POST /resource
-  # def create
-  #   super
-  # end
+  def create
+    super
+    @user.avatar.attach(params[:avatar])
+    @user.save!
+    root_path
+  end
 
   # GET /resource/edit
   # def edit
@@ -59,6 +62,11 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # def configure_account_update_params
   #   devise_parameter_sanitizer.permit(:account_update, keys: [:attribute])
   # end
+
+  def configure_sign_up_params
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :email, :user_type, :password, :current_password, :dob, :bank_name, :account_number, :bsb, :driver_id, :mobile_number, :address, :avatar])
+    devise_parameter_sanitizer.permit(:account_update, keys: [:name, :email, :user_type, :password, :current_password, :dob, :bank_name, :account_number, :bsb, :driver_id, :mobile_number, :address, :avatar])
+  end
 
   # The path used after sign up.
   # def after_sign_up_path_for(resource)

@@ -2,3 +2,9 @@
 <h1>Hello, Rails!</h1>
 
 <%= link_to 'Show All Listing', listings_path %>
+
+<% if current_user.avatar.attached? %>
+  <%= image_tag current_user.avatar, class: 'image-size' %>
+<% else %>
+  <p>No image for this puppy</p>
+<% end %>

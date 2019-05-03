@@ -1,5 +1,5 @@
 class ListingsController < ApplicationController
-
+  protect_from_forgery 
   def index
     @listings = Listing.all
   end

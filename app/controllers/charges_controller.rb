@@ -1,13 +1,14 @@
 class ChargesController < ApplicationController
+
   
   def new
   end
   
   def create
     # Amount in cents. This amount will be charged.
+    @amount = 0
     @listing = Listing.find(params[:listing_id])
     listing_amount = @listing.amount
-
     @offers = @listing.offers
     @offers.each do |offer|
     offer_interest = offer.interest
