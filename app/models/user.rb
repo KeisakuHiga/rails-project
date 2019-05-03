@@ -6,4 +6,6 @@ class User < ApplicationRecord
   has_many :listings, dependent: :destroy
   has_many :offers, dependent: :destroy
   validates :name, :dob, :bank_name, :account_number, :bsb, :driver_id, :mobile_number, :address, presence: true
+  has_one_attached :avatar
+
 end
