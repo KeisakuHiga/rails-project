@@ -1,57 +1,57 @@
-    <h2>Edit <%= resource_name.to_s.humanize %></h2>
+<h2>Edit <%= resource_name.to_s.humanize %></h2>
 
-    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
     <%= devise_error_messages! %>
 
     <div><%= f.label :name %><br />
-        <%= f.text_field :name, autofocus: true %></div>
+    <%= f.text_field :name, autofocus: true %></div>
 
- <div><%= label :user_type, "Borrower"%>
-<%= f.radio_button :user_type, true, :value => true%></div>
+    <div><%= label :user_type, "Borrower"%>
+    <%= f.radio_button :user_type, true, :value => true%></div>
 
- <div><%= label :user_type, "Lender" %>
-      <%= f.radio_button :user_type, false , :checked => true , :value => false %></div>
+    <div><%= label :user_type, "Lender" %>
+    <%= f.radio_button :user_type, false , :checked => true , :value => false %></div>
 
     <div><%= f.label :dob %><br />
-        <%= f.date_select :dob, :start_year => Date.current.year, :end_year => 1920 %></div>
+    <%= f.date_select :dob, :start_year => Date.current.year, :end_year => 1920 %></div>
 
     <div><%= f.label :"Mobile Number" %><br />
     <%= f.number_field :mobile_number, autofocus: true %></div>
 
-        <div><%= f.label :"Country" %><br />
-        <%= f.text_field :address, autofocus: true %></div>
+    <div><%= f.label :"Country" %><br />
+    <%= f.text_field :address, autofocus: true %></div>
 
-        <div><%= f.label :"Bank Name" %><br />
-        <%= f.text_field :bank_name, autofocus: true %></div>
+    <div><%= f.label :"Bank Name" %><br />
+    <%= f.text_field :bank_name, autofocus: true %></div>
 
-        <div><%= f.label :"Account Number" %><br />
-        <%= f.number_field :account_number, autofocus: true %></div>
+    <div><%= f.label :"Account Number" %><br />
+    <%= f.number_field :account_number, autofocus: true %></div>
 
-        <div><%= f.label :"BSB" %><br />
-        <%= f.number_field :bsb, autofocus: true %></div>
+    <div><%= f.label :"BSB" %><br />
+    <%= f.number_field :bsb, autofocus: true %></div>
 
-        <div><%= f.label :"Drivers License ID" %><br />
-        <%= f.number_field :driver_id, autofocus: true %></div>
-           
+    <div><%= f.label :"Drivers License ID" %><br />
+    <%= f.number_field :driver_id, autofocus: true %></div>
+
 
     <div><%= f.label :email %><br />
-        <%= f.email_field :email %></div>
+    <%= f.email_field :email %></div>
 
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
     <% end %>
 
     <div><%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-        <%= f.password_field :password, autocomplete: "off" %></div>
+    <%= f.password_field :password, autocomplete: "off" %></div>
 
     <div><%= f.label :password_confirmation %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
+    <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
 
     <div><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-        <%= f.password_field :current_password, autocomplete: "off" %></div>
+    <%= f.password_field :current_password, autocomplete: "off" %></div>
 
     <div><%= f.submit "Update" %></div>
-    <% end %>
+<% end %>
 
     <h3>Cancel my account</h3>
 
