@@ -9,6 +9,11 @@
 </p>
  
 <p>
+  <strong>Interest amount:</strong>
+  AU<%=  number_to_currency(@listing.amount * (offer.interest/100) * offer.months / 12)%>
+</p>
+ 
+<p>
   <strong>Term:</strong>
   <%= offer.months %> months
 </p>
