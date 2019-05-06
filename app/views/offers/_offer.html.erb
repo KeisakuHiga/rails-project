@@ -1,6 +1,6 @@
 <p>
   <strong>Lender Name:</strong>
-  <%= offer.user.name %>
+  
 </p>
  
 <p>
@@ -23,9 +23,7 @@
   <%= offer.description %>
 </p>
 
-<% if (user_signed_in? && current_user.id == @listing.user_id)%>
-  <%= render "layouts/shared/stripe_form" %>
-<% end %>
+  <%= render "layouts/shared/stripe_form", amount: amount %>
 
 <p>
   <% if (user_signed_in? && current_user.id == offer.user_id) %>
