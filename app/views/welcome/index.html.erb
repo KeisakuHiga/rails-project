@@ -1,3 +1,6 @@
+<h1>Your listings</h1>
+
+<%if user_signed_in? %>
 <div class="index-page">
   <div class="bookshelf">
     <% @listings.each do |listing| %>
@@ -11,6 +14,7 @@
             <button><%= link_to "show", listing %></button>
         </div>
       </div>
+    <% end %>
     <% end %>
     <% end %>
 
