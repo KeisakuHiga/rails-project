@@ -56,7 +56,7 @@ User.destroy_all
   end
 end
 
-puts 'Creating an admin user'
-User.new({ :email => 'admin@admin.com.au', :password => 'password321', :password_confirmation => 'password321', :user_type => true, :admin => 'true'}).save
+# puts 'Creating an admin user'
+# User.new({ :email => 'admin@admin.com.au', :password => 'password321', :password_confirmation => 'password321', :user_type => true, :admin => 'true'}).save
 
 puts "Seeding Over"
