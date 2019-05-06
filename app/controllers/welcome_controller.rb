@@ -4,4 +4,6 @@ class WelcomeController < ApplicationController
     @listings.each do |listing|
     end
   end
+  def your
+  end
 end
