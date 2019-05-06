@@ -4,6 +4,7 @@
 <%if user_signed_in? %>
 <div class="index-page">
   <div class="bookshelf">
+  <% @listings = Listing.all %>
     <% @listings.each do |listing| %>
     <%if current_user.id == listing.user_id %>
       <div class="book-card bg-light">
