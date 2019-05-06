@@ -44,6 +44,6 @@ Rails.application.routes.draw do
   # delete "/offers/:id", to: "offers#destroy", as: "delete_offer"
   # get "/offers/:id/edit", to: "offers#edit", as: "edit_offer"
   patch "/listings/:id/offers/:id/edit", to: "offers#update"
-
+  get "welcome/your", as: "your"
   
 end
