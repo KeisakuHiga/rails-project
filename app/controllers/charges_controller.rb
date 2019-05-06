@@ -18,7 +18,8 @@ class ChargesController < ApplicationController
     offer_month = @offer.months
     
     @amount = (listing_amount * offer_interest * offer_month / 12).to_i
-
+    @offer.status = true
+    @offer.save
     customer = Stripe::Customer.create({
       email: params[:stripeEmail],
       source: params[:stripeToken],
