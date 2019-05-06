@@ -33,8 +33,34 @@
 
 <div class="lenders-offers">
   <h1>Offers</h1>
-  <%= render @listing.offers %>
+  <% @listing.offers.each do |offer| %>
+    <p>
+      <strong>Lender Name:</strong>
+      <%= offer.user.name %>
+    </p>
     
+    <p>
+      <strong>Interest:</strong>
+      <%= offer.interest %> %
+    </p>
+    
+    <p>
+      <strong>Interest amount:</strong>
+      AU<%=  number_to_currency(@listing.amount * (offer.interest/100) * offer.months / 12)%>
+    </p>
+    
+    <p>
+      <strong>Term:</strong>
+      <%= offer.months %> months
+    </p>
+
+    <p>
+      <strong>Comment:</strong>
+      <%= offer.description %>
+    </p>
+    <% @amount =  @listing.amount * offer.interest * offer.months / 12 %>
+    <%= render "layouts/shared/stripe_form", amount: @amount, offer_id: offer.id %>
+  <% end %>
 
   <% if user_signed_in? %>
     <% unless current_user.user_type == true || unless current_user.id == @listing.user_id%>  

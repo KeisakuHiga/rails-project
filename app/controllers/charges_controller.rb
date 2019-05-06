@@ -9,12 +9,13 @@ class ChargesController < ApplicationController
     @amount = 0
     @listing = Listing.find(params[:listing_id])
     listing_amount = @listing.amount
+
     @offers = @listing.offers
-    @offers.each do |offer|
-    offer_interest = offer.interest
-    offer_month = offer.months
+    @offer = Offer.find(params[:offer_id])
+    offer_interest = @offer.interest
+    offer_month = @offer.months
+    
     @amount = (listing_amount * offer_interest * offer_month / 12).to_i
-    end
 
     customer = Stripe::Customer.create({
       email: params[:stripeEmail],
@@ -25,7 +26,7 @@ class ChargesController < ApplicationController
       customer: customer.id,
       amount: @amount,
       description: 'Rails Stripe customer',
-      currency: 'usd',
+      currency: 'aud',
     })
   
   rescue Stripe::CardError => e
