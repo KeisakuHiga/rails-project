@@ -4,6 +4,10 @@ class ListingsController < ApplicationController
     @listings = Listing.all
   end
 
+  def your
+    @listings = Listing.all
+  end
+
   def new
     # @listing = Listing.new
     @listing = current_user.listings.build
