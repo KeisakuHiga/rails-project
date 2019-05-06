@@ -13,7 +13,6 @@ class ChargesController < ApplicationController
     @listing = Listing.find(params[:listing_id])
     listing_amount = @listing.amount
 
-
     @offer = Offer.find(params[:offer_id])
     offer_interest = @offer.interest
     offer_month = @offer.months
