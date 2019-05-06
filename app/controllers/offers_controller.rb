@@ -12,6 +12,15 @@ class OffersController < ApplicationController
     if @offer.save
       flash[:notice] = "Your offer successfully saved!!!"
       redirect_to listing_path(@listing.id)
+      @amount = 0
+      @listing = Listing.find(params[:listing_id])
+      listing_amount = @listing.amount
+      @offers = @listing.offers
+      @offers.each do |offer|
+      offer_interest = offer.interest
+      offer_month = offer.months
+      @amount = (listing_amount * offer_interest * offer_month / 12).to_i
+      end 
 
     else
       flash[:notice] = "Saving failed"
