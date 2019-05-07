@@ -1,16 +1,8 @@
-<div class="borrower-listing">
+<div class="container">
+            <div class="border2" >
+            <div class="texta" >
+                      
 
-  <div class="listing-id">
-    <p>Listing Number: <%= @listing.id %></p>
-  </div>
-
-  <div class="listing-posted-at">
-    <p>Posted at: <%= @listing.created_at %></p>
-  </div>
-
-  <div class="listing-updated-at">
-    <p>Updated at: <%= @listing.updated_at %></p>
-  </div>
 
   <div class="listing-title">
     <h1>Title:</h1>
@@ -26,4 +18,10 @@
     <h2>Description:</h2>
     <p><%= @listing.description %></p>
   </div>
+    <div class="listing-posted-at">
+    <p>Posted at: <%= @listing.created_at %>
+       Updated at: <%= @listing.updated_at %></p>
+  </div>
+</div>
+</div>
 </div>
