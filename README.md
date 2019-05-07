@@ -104,12 +104,12 @@ Answer: On the landing page there is an option to sign up with short details abo
 
 16. Provide Wireframes for your App.
 
-Answer: 
+Answer:
 
 
 17. Describe the way tasks are allocated and tracked in your project.
 
-Answer: 
+Answer: We are using trello. The way it works is we have multiple tables of what to do, what we are working on and when we have done a task we move it to a table called done. Before working we have a discussion and decide what functionality to implement next.
 
 
 18. Discuss how Agile methodology is being implemented in your project.
@@ -119,12 +119,12 @@ Answer:
 
 19. Provide an overview and description of your Source control process.
 
-Answer: 
+Answer: We are using github for the Source control process. The way we use it is that after one of us makes a change we make a push request to github in our own branches. We then create a pull request to merge it with the master branch which the other person then reviews the code changes and goes over why they made those changes. We then merge the code and pull to our local machines.
 
 
 20. Provide an overview and description of your Testing process.
 
-Answer: 
+Answer: We have created different listings and user types in the seeds.rb file. After resetting the database after major changes we can then check manually that all the listing types work correctly.
 
 
 21. Discuss and analyse requirements related to information system security.
@@ -135,7 +135,7 @@ Answer:
 22. Discuss methods you will use to protect information and data.
 
 Answer: 
-
+We have put all the private keys on the heroku database which is secure and made sure to not upload those keys to github or anywhere public.
 
 23. Research what your legal obligations are in relation to handling user data.
 
