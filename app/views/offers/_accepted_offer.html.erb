@@ -1,6 +1,9 @@
 <% @listing.offers.each do |offer| %>
 
   <% if offer.status == true %>
+  <div class="container">
+  <div class="texta">
+            <div class="border3" >
     <h1>Accepted Offer</h1>
     <div class="offer-id">
       <p>Offer number: <%= offer.id %></p>
@@ -38,6 +41,9 @@
       <strong>Comment:</strong>
       <%= offer.description %>
     </p>
+    </div>
+    </div>
+    </div>
     <% @amount =  @listing.amount * offer.interest * offer.months / 12 %>
   <% end %>
 <% end %>

@@ -1,5 +1,8 @@
 <% @listing.offers.each do |offer| %>
   <% if offer.status == false && @listing.status == false %>
+    <div class="container">
+            <div class="border2" >
+             <div class="texta" >
     <h1>Pending Offer by <%= offer.user.name %></h1>
     <div class="offer-id">
       <p>Offer number: <%= offer.id %></p>
@@ -37,9 +40,13 @@
       <strong>Comment:</strong>
       <%= offer.description %>
     </p>
+
     <% if current_user.user_type == true && current_user.id == @listing.user_id && @listing.status == false %> 
       <% @amount =  @listing.amount * offer.interest * offer.months / 12 %>
       <%= render "layouts/shared/stripe_form", amount: @amount, offer_id: offer.id %>
+          </div>
+    </div>
+    </div>
     <% end %>
   <% end %>
 <% end %>
