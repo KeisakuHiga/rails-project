@@ -1,9 +1,12 @@
 <%= form_for @listing, url: edit_listing_path(@listing), html: {class: "edit-form"},:action => "update" do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
+  <%= f.label :title %><br>
+  <%= f.text_field :title %><br>
 
-  <%= f.label :description %>
-  <%= f.text_field :description %>
+  <%= f.label :amount %><br>
+  <%= f.text_field :amount %><br>
+
+  <%= f.label :description %><br>
+  <%= f.text_area :description %><br>
 
   <%= f.submit 'Update listing', class: 'btn btn-primary' %>
 <% end %>
