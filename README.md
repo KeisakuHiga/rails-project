@@ -114,7 +114,7 @@ Answer: We are using trello. The way it works is we have multiple tables of what
 
 18. Discuss how Agile methodology is being implemented in your project.
 
-Answer: 
+Answer: We are using agile every day by having a stand up in the morning to discuss what we did the day before, what the problems were and what we are doing today. We then write code quickly and test it, then upload it to github for the other person to access then we review the code and upload to heroku to do the final test to make sure it works.
 
 
 19. Provide an overview and description of your Source control process.
@@ -129,7 +129,7 @@ Answer: We have created different listings and user types in the seeds.rb file. 
 
 21. Discuss and analyse requirements related to information system security.
 
-Answer: 
+Answer: Since our application uses user accounts with there own permissions based off what type they are we have used devise for setting them up and protecting their info. For permissions on what certain users can access we have used cancan.
 
 
 22. Discuss methods you will use to protect information and data.
@@ -139,4 +139,4 @@ We have put all the private keys on the heroku database which is secure and made
 
 23. Research what your legal obligations are in relation to handling user data.
 
-Answer: 
+Answer: We need to comply with Australian data privacy laws which means thats users cannot see others user information. Passwords can also not be visible to either users or us as well and needs proper encrytion so only the user can know the password.
