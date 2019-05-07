@@ -10,8 +10,14 @@
     email: <%= current_user.email %>
   </p>
   <p>
-    user_type: <%= current_user.user_type %>
+  <% if current_user.user_type == true %>
+    user_type: Borrower
   </p>
+  <% else %>
+  <p>
+    user_type: Lender
+    </p>
+    <% end %>
   <p>
     mobile_number: <%= current_user.mobile_number %>
   </p>
