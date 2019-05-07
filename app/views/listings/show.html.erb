@@ -138,8 +138,24 @@
       <% @amount =  @listing.amount * offer.interest * offer.months / 12 %>
       <%= render "layouts/shared/stripe_form", amount: @amount, offer_id: offer.id %>
       <% end %>
-      <% end %>
+
+
+      <p>
+        <% if (user_signed_in? && current_user.id == offer.user_id) %>
+          <%= link_to 'Edit your offer', edit_listing_offer_path(@listing, offer.id) %>
+        <% end %>
+
+        <% if (user_signed_in? && current_user.id == offer.user_id) %>
+          <%= link_to 'Destroy your Offer', [offer.listing, offer],
+                    method: :delete,
+                    data: { confirm: 'Are you sure?' } %>
+        <% end %>
+      </p>
+
     <% end %>
+
+    
+
     <% if current_user.user_type != true && current_user.id != @listing.user_id && @listing.status == false %>  
       <h2>Add your offer:</h2>
       <%= render 'offers/form' %>
