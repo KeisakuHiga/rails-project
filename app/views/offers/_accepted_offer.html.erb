@@ -1,10 +1,11 @@
 <% @listing.offers.each do |offer| %>
 
   <% if offer.status == true %>
+
   <div class="container">
   <div class="texta">
             <div class="border3" >
-    <h1>Accepted Offer</h1>
+    <h2>Accepted Offer</h2>
     <div class="offer-id">
       <p>Offer number: <%= offer.id %></p>
     </div>

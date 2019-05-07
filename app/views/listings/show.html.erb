@@ -10,9 +10,7 @@
       <div class="listing-edit-button">
         <%= link_to "Edit #{@listing.title}", edit_listing_path %>
       </div>
-    <% end %>
 
-    <% if (user_signed_in? && current_user.id == @listing.user_id) %>
       <div class="listing-delete-button">
         <%= link_to "Destroy #{@listing.title}", @listing,
                   method: :delete,
