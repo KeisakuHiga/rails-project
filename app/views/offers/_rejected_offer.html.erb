@@ -1,6 +1,6 @@
 <% @listing.offers.each do |offer| %>
   <% if offer.status == false && @listing.status == true %>
-    <h1>Rejected Offer by <%= @listing.user.name %></h1>
+    <h2>Rejected Offer by <%= offer.user.name %></h2>
     <div class="offer-id">
       <p>Offer number: <%= offer.id %></p>
     </div>

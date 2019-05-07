@@ -1,7 +1,7 @@
 <% @listing.offers.each do |offer| %>
 
   <% if offer.status == true %>
-    <h1>Accepted Offer</h1>
+    <h2>Accepted Offer by <%= offer.user.name %></h2>
     <div class="offer-id">
       <p>Offer number: <%= offer.id %></p>
     </div>

@@ -1,6 +1,6 @@
 <% @listing.offers.each do |offer| %>
   <% if offer.status == false && @listing.status == false %>
-    <h1>Pending Offer by <%= offer.user.name %></h1>
+    <h2>Pending Offer by <%= offer.user.name %></h2>
     <div class="offer-id">
       <p>Offer number: <%= offer.id %></p>
     </div>
@@ -41,5 +41,18 @@
       <% @amount =  @listing.amount * offer.interest * offer.months / 12 %>
       <%= render "layouts/shared/stripe_form", amount: @amount, offer_id: offer.id %>
     <% end %>
+
+    <p>
+      <% if (user_signed_in? && current_user.id == offer.user_id) %>
+        <%= link_to 'Edit your offer', edit_listing_offer_path(@listing, offer.id) %>
+      <% end %>
+
+      <% if (user_signed_in? && current_user.id == offer.user_id) %>
+        <%= link_to 'Destroy your Offer', [offer.listing, offer],
+                  method: :delete,
+                  data: { confirm: 'Are you sure?' } %>
+      <% end %>
+    </p>
+
   <% end %>
 <% end %>
