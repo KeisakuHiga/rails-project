@@ -56,9 +56,6 @@
   <h1>Offers</h1>
   
   <% if user_signed_in? %>
-  <%= render "offers/offer" %>
-  <h1>above using a patial file</h1>  
-  <h1>above using a patial file</h1>  
     <% @listing.offers.each do |offer| %>
       <p>
       <% if offer.status == true %>
