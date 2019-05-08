@@ -24,7 +24,7 @@
 
 ## 1. A link (URL) to the published App
 URL: https://sleepy-island-78175.herokuapp.com/
-
+<a href='https://sleepy-island-78175.herokuapp.com/' target=“_blank”>link</a>
 
 <a name="2"></a>
 
