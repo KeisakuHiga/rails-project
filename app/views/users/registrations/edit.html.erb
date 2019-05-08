@@ -23,10 +23,12 @@
                   <td><%= f.date_select :dob, :start_year => Date.current.year, :end_year => 1920 %></td>
                 </tr>
                 <tr>
-                  <td><%= label :user_type, "User type"%></td>
-                  <td><%= f.radio_button :user_type, true, :value => true%> Borrower
-                      <br>
-                      <%= f.radio_button :user_type, true, :value => false%> Lender
+                  <td><div><%= label :user_type, "User Type"%></td>
+                  <td><%= f.radio_button :user_type, true, :value => true%></div> Borrower  </td>
+                    <br>
+                      
+                  <td><div><%= label :user_type, "" %>
+                       <%= f.radio_button :user_type, false , :checked => true , :value => false %> Lender </div>
                   </td>
                 </tr>
                 <tr>
@@ -108,7 +110,7 @@
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
       <div class="panel panel-info">
         <div class="panel-heading">
-          <h3 class="panel-title">Passwrod</h3>
+          <h3 class="panel-title">Password</h3>
         </div>
         <div class="panel-body">
           <div class="row">

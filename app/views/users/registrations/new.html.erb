@@ -1,46 +1,123 @@
-<h2>Register</h2>
-
-
+<div class="container">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), :html => { :multipart => true }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
-
-  <div><%= f.label :name %><br />
-  <%= f.text_field :name, autofocus: true %></div>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  <div class="padding1">
+    <h2>Register</h2>
   </div>
-
-  <div><%= label :user_type, "Borrower"%>
-  <%= f.radio_button :user_type, true, :value => true%></div>
-
-  <div><%= label :user_type, "Lender" %>
-      <%= f.radio_button :user_type, false , :checked => true , :value => false %></div>
-
-  <div><%= f.label :dob %><br />
-      <%= f.date_select :dob, :start_year => Date.current.year, :end_year => 1920 %></div>
-
-  <div><%= f.label :"Mobile Number" %><br />
-  <%= f.number_field :mobile_number, autofocus: true %></div>
-
-  <div><%= f.label :"Country" %><br />
-  <%= f.text_field :address, autofocus: true %></div>
-
-  <div><%= f.label :"Bank Name" %><br />
-  <%= f.text_field :bank_name, autofocus: true %></div>
-
-  <div><%= f.label :"Account Number" %><br />
-  <%= f.number_field :account_number, autofocus: true %></div>
-
-  <div><%= f.label :"BSB" %><br />
-  <%= f.number_field :bsb, autofocus: true %></div>
-
-  <div><%= f.label :"Drivers License ID" %><br />
-  <%= f.number_field :driver_id, autofocus: true %></div>
-
-  <input type="file" name="avatar" id="avatar">
-
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Profile</h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <table class="table table-user-information">
+              <tbody>
+                <tr>
+                  <td><%= f.label :name %></td>
+                  <td><%= f.text_field :name, autofocus: true %></td>
+                </tr>
+                <tr>
+                  <td><%= f.label :date_of_birth %></td>
+                  <td><%= f.date_select :dob, :start_year => Date.current.year, :end_year => 1920 %></td>
+                </tr>
+                <tr>
+                  <td><div><%= label :user_type, "User Type"%></td>
+                  <td><%= f.radio_button :user_type, true, :value => true%></div> Borrower  </td>
+                    <br>
+                      
+                  <td><div><%= label :user_type, "" %>
+                       <%= f.radio_button :user_type, false , :checked => true , :value => false %> Lender </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+			</div>
+		</div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Contact</h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <table class="table table-user-information">
+              <tbody>
+                <tr>
+                  <td><%= f.label :email %></td>
+                  <td><%= f.email_field :email %></td>
+                </tr>
+                <tr>
+                  <td><%= f.label :"Mobile Number" %></td>
+                  <td><%= f.number_field :mobile_number, autofocus: true %></td>
+                </tr>
+                <tr>
+                  <td><%= f.label :"Country" %></td>
+                  <td><%= f.text_field :address, autofocus: true %></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+			</div>
+		</div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Other details</h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <table class="table table-user-information">
+              <tbody>
+                <tr>
+                  <td><%= f.label :"Banck account Number" %></td>
+                  <td><%= f.number_field :account_number, autofocus: true %></td>
+                </tr>
+                <tr>
+                  <td><%= f.label :"BSB" %></td>
+                  <td><%= f.number_field :bsb, autofocus: true %></td>
+                </tr>
+                <tr>
+                  <td><%= f.label :"Drivers License number" %></td>
+                  <td><%= f.number_field :driver_id, autofocus: true %></td>
+                </tr>
+                <tr>
+                  <td><%= f.label :"Drivers License photo" %></td>
+                  <td><input type="file" name="avatar" id="avatar"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+			</div>
+		</div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Password</h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <table class="table table-user-information">
+              <tbody>
+                <tr>
+                
   <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
@@ -53,10 +130,26 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
+                </tr>
+                <tr>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+			</div>
+      <div><%= f.submit "Sign Up" %></div>
+      <% end %>
+		</div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
 
-<%= render "users/shared/links" %>
+	</div>
+</div>
+
+<%= link_to "Back", :back %>
+
