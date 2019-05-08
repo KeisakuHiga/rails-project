@@ -14,7 +14,6 @@ Rails.application.routes.draw do
 
   root "welcome#index"
   get "welcome/index"
-  get "welcome/about", to: "welcome#about"
 
   # Listing has many offers
   resources :listings do

@@ -8,9 +8,11 @@
           <% if current_user.id == offer.user_id %>
             <div class="book-card bg-light">
               <div class="book-description">
-                <p> Description: <%= offer.description %></p>
+                <p> # <%= offer.id %></p>
                 <p> Interest: <%= offer.interest %></p>
+                <p> Description: <%= offer.description %></p>
               </div>
+              <%= link_to 'Go to the listing', 'offer.listing' %>
             </div>
           <% end %>
         <% end %>

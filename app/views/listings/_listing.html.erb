@@ -1,8 +1,8 @@
 <div class="container">
-  <div class="border2" >
+  <div class="border2">
     <div class="texta" >
       <div class="listing-title">
-        <h1>Title:</h1>
+        <h2>Title:</h2>
         <p><%= @listing.title %></p>
       </div>
         <div class="listing-amount">
@@ -19,10 +19,10 @@
         </div>
         <% if (user_signed_in? && current_user.id == @listing.user_id)%>
           <div class="listing-edit-button">
-            <%= link_to "Edit #{@listing.title}", edit_listing_path %>
+            <%= link_to "Edit", edit_listing_path %>
           </div>
           <div class="listing-delete-button">
-            <%= link_to "Destroy #{@listing.title}", @listing,
+            <%= link_to "Delete", @listing,
                       method: :delete,
                       data: { confirm: 'Are you sure you want to delete ' + @listing.title } %>
           </div>

@@ -1,6 +1,6 @@
 <div class="listing-container">
   <% if @listing.status == true %>
-    <h1>DEAL HAS BEEEN DONE </h1>
+    <h1>THIS DEAL HAS BEEEN DONE </h1>
     <%= render 'listing' %>
   <% else %>
     <h1>DEAL STILL THERE </h1>
@@ -9,7 +9,7 @@
 </div>
 
 <div class="lenders-offers">
-  <h1>Offers</h1>
+  <h1>OFFERS</h1>
   
   <% if user_signed_in? %>
     <%= render 'offers/accepted_offer' %>
