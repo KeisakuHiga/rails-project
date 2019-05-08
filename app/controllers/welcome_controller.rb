@@ -8,6 +8,13 @@ class WelcomeController < ApplicationController
   def your
   end
 
+  def show
+
+  end
+
+  def offers
+  end
+
   def about
   end
   

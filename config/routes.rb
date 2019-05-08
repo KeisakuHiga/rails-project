@@ -46,5 +46,6 @@ Rails.application.routes.draw do
   # get "/offers/:id/edit", to: "offers#edit", as: "edit_offer"
   patch "/listings/:id/offers/:id/edit", to: "offers#update"
   get "/welcome/your", to: "welcome#your", as: "your_listing"
+  get "/welcome/offers", to: "welcome#offers", as: "your_offers"
   
 end

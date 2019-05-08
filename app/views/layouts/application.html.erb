@@ -38,13 +38,20 @@
             <a class="nav-link" href="/listings">All Listings</a>
            </li>
 
+           <% if current_user.user_type == false %>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/welcome/offers">My Offers</a>
+           </li>
+           <% end %>
+
+          <% if current_user.user_type == true %>
+
           <li class="nav-item">
             <a class="nav-link" href="/welcome/your">My Listings</a>
            </li>
+           <% end %>
 
-           <li class="nav-item">
-            <a class="nav-link" href="/users/edit">My Listings</a>
-           </li>
           <li class="nav-item">
             <a class="nav-link" href="/my_page">My profile</a>
            </li>
