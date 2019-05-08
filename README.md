@@ -23,13 +23,12 @@
 <a name="1"></a>
 
 ## 1. A link (URL) to the published App
-URL: https://sleepy-island-78175.herokuapp.com/
-<a href='https://sleepy-island-78175.herokuapp.com/' target=“_blank”>link</a>
+<a href="https://sleepy-island-78175.herokuapp.com/" target="_blank">App link</a>
 
 <a name="2"></a>
 
 ## 2. A link to the GitHub repository
-URL: https://github.com/KeisakuHiga/rails-project/tree/master
+<a href="https://github.com/KeisakuHiga/rails-project/tree/master" target="_blank">Github link</a>
 
 <a name="3"></a>
 
