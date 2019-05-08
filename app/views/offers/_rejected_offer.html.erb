@@ -1,49 +1,51 @@
 <% @listing.offers.each do |offer| %>
   <% if offer.status == false && @listing.status == true %>
-
     <div class="container">
-            <div class="border2" >
-            <div class="texta" >
-    <h2>Rejected Offer by <%= @listing.user.name %></h2>
-    <div class="offer-id">
-      <p>Offer number: <%= offer.id %></p>
-    </div>
-
-    <div class="offer-posted-at">
-      <p>Posted at: <%= offer.created_at %></p>
-    </div>
-
-    <div class="offer-updated-at">
-      <p>Updated at: <%= offer.updated_at %></p>
-    </div>
-
-    <p>  
-      <strong>Lender Name:</strong>
-      <%= offer.user.name %>
-    </p>
-  
-    <p>
-      <strong>Interest rate:</strong>
-      <%= offer.interest %> %
-    </p>
-  
-    <p>
-      <strong>Lending term:</strong>
-      <%= offer.months %> months
-    </p>
-  
-    <p>
-      <strong>Interest amount :</strong>
-      AU<%=  number_to_currency(@listing.amount * (offer.interest/100) * offer.months / 12)%>
-    </p>
-
-    <p>
-      <strong>Comment:</strong>
-      <%= offer.description %>
-    </p>
+      <div class="texta" >
+        <div class="border2">
+          <h2>Rejected Offer by <%= @listing.user.name %></h2>
+          <div class="offer-id">
+            <p>Offer number: <%= offer.id %></p>
           </div>
+          <div class="offer-posted-at">
+            <p>Posted at: <%= offer.created_at %></p>
+          </div>
+          <div class="offer-updated-at">
+            <p>Updated at: <%= offer.updated_at %></p>
+          </div>
+          <div class="offer-lender-name">
+            <p>
+              <strong>Lender Name:</strong>
+              <%= offer.user.name %>
+            </p>
+          </div>
+          <div class="offer-interest">
+            <p>
+              <strong>Interest rate:</strong>
+              <%= offer.interest %> %
+            </p>
+          </div>
+          <div class="offer-term">
+            <p>
+              <strong>Lending term:</strong>
+              <%= offer.months %> months
+            </p>
+          </div>
+          <div class="offer-interest-amount">
+            <p>
+              <strong>Interest amount:</strong>
+              AU<%=  number_to_currency(@listing.amount * (offer.interest/100) * offer.months / 12)%>
+            </p>
+          </div>
+          <div class="offer-description">
+            <p>
+              <strong>Description:</strong>
+              <%= offer.description %>
+            </p>
+          </div>
+        </div>
       </div>
-      </div>
+    </div>
     <% if current_user.user_type == true && current_user.id == @listing.user_id && @listing.status == false %> 
       <% @amount =  @listing.amount * offer.interest * offer.months / 12 %>
       <%= render "layouts/shared/stripe_form", amount: @amount, offer_id: offer.id %>
