@@ -14,8 +14,8 @@
           <p><%= @listing.description %></p>
         </div>
         <div class="listing-posted-at">
-          <p>Posted at: <%= @listing.created_at %></p>
-          <p>Updated at: <%= @listing.updated_at %></p>
+          <p>Posted at: <%= @listing.created_at.strftime("%b. %d, %Y") %></p>
+          <p>Updated at: <%= @listing.updated_at.strftime("%b. %d, %Y") %></p>
         </div>
         <% if (user_signed_in? && current_user.id == @listing.user_id)%>
           <div class="listing-edit-button">

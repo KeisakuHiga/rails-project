@@ -8,10 +8,10 @@
             <p>Offer number: <%= offer.id %></p>
           </div>
           <div class="offer-posted-at">
-            <p>Posted at: <%= offer.created_at %></p>
+            <p>Posted at: <%= offer.created_at.strftime("%b. %d, %Y") %></p>
           </div>
           <div class="offer-updated-at">
-            <p>Updated at: <%= offer.updated_at %></p>
+            <p>Updated at: <%= offer.updated_at.strftime("%b. %d, %Y") %></p>
           </div> 
           <div class="offer-lender-name">
             <p>

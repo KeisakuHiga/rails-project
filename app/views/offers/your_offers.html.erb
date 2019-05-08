@@ -7,7 +7,15 @@
           <div class="book-card bg-light">
             <div class="book-description">
               <p> # <%= offer.id %></p>
-              <p> Interest: <%= offer.interest %></p>
+              <% if offer.listing.status == false %>
+                <h3>Pending</h3>
+              <% elsif offer.status == true%>
+                <h3>Accepted</h3>
+              <% else %>
+                <h3>Rejected</h3>
+              <% end %>
+              <p> Offered date: <%= offer.created_at.strftime("%b. %d, %Y") %></p>
+              <p> Interest rate: <%= offer.interest %> %</p>
               <p> Description: <%= offer.description %></p>
             </div>
             <%= link_to 'Go to the request', listing_path(offer.listing) %>
