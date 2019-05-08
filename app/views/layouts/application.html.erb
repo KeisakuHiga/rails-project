@@ -28,14 +28,14 @@
 
         <% if can? :create, Listing %>
         <li class="nav-item">
-          <a class="nav-link" href="/listings/new">New</a>
+          <a class="nav-link" href="/listings/new">New Loan Request</a>
         </li>
         <% end %>
 
         <% if user_signed_in? %>
 
           <li class="nav-item">
-            <a class="nav-link" href="/listings">All Listings</a>
+            <a class="nav-link" href="/listings">All Loan Requests</a>
            </li>
 
            <% if current_user.user_type == false %>
@@ -48,7 +48,7 @@
           <% if current_user.user_type == true %>
 
           <li class="nav-item">
-            <a class="nav-link" href="/welcome/your">My Listings</a>
+            <a class="nav-link" href="/welcome/your">My Loan Requests</a>
            </li>
            <% end %>
 
@@ -56,18 +56,24 @@
             <a class="nav-link" href="/my_page">My profile</a>
            </li>
 
-          <a class="nav-link">
-            <%= link_to 'Edit profile', edit_user_registration_path %>
-          </a>
+            <li class="nav-item">
+            <a class="nav-link" href="/users/edit">Edit Profile</a>
+           </li>
+
+
+          
           <a class="nav-link">
             <%= link_to 'Log out', destroy_user_session_path, method: :delete %>
           </a>
             </ul>
           </li>
         <% else %>
-          <%= link_to 'About', welcome_about_path %>
-          <%= link_to 'Log In', new_user_session_path %>
-          <%= link_to 'Sign Up', new_user_registration_path %>
+            <li class="nav-item">
+            <a class="nav-link" href="/users/sign_in">Log in</a>
+           </li>
+             <li class="nav-item">
+            <a class="nav-link" href="/users/sign_up">Sign Up</a>
+           </li>
         <% end %>
       </ul>
     </div>
