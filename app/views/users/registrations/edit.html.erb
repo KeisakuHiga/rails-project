@@ -1,62 +1,190 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
-
+<div class="container">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, :multipart => true }) do |f| %>
-    <%= devise_error_messages! %>
-
-    <div><%= f.label :name %><br />
-    <%= f.text_field :name, autofocus: true %></div>
-
-    <div><%= label :user_type, "Borrower"%>
-    <%= f.radio_button :user_type, true, :value => true%></div>
-
-    <div><%= label :user_type, "Lender" %>
-    <%= f.radio_button :user_type, false , :checked => true , :value => false %></div>
-
-    <div><%= f.label :dob %><br />
-    <%= f.date_select :dob, :start_year => Date.current.year, :end_year => 1920 %></div>
-
-    <div><%= f.label :"Mobile Number" %><br />
-    <%= f.number_field :mobile_number, autofocus: true %></div>
-
-    <div><%= f.label :"Country" %><br />
-    <%= f.text_field :address, autofocus: true %></div>
-
-    <div><%= f.label :"Bank Name" %><br />
-    <%= f.text_field :bank_name, autofocus: true %></div>
-
-    <div><%= f.label :"Account Number" %><br />
-    <%= f.number_field :account_number, autofocus: true %></div>
-
-    <div><%= f.label :"BSB" %><br />
-    <%= f.number_field :bsb, autofocus: true %></div>
-
-    <div><%= f.label :"Drivers License ID" %><br />
-    <%= f.number_field :driver_id, autofocus: true %></div>
-
-    <input type="file" name="avatar" id="avatar">
-
-
-    <div><%= f.label :email %><br />
-    <%= f.email_field :email %></div>
+  <%= devise_error_messages! %>
+  <h2>Edit your personal information</h2>
+  <div class="row">
+    <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
+			<p class=" text-info">Created at: <%= current_user.created_at %></p>
+      <p class=" text-info">Updated at: <%= current_user.updated_at %></p>
+		</div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Profile</h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <table class="table table-user-information">
+              <tbody>
+                <tr>
+                  <td><%= f.label :name %></td>
+                  <td><%= f.text_field :name, autofocus: true %></td>
+                </tr>
+                <tr>
+                  <td><%= f.label :date_of_birth %></td>
+                  <td><%= f.date_select :dob, :start_year => Date.current.year, :end_year => 1920 %></td>
+                </tr>
+                <tr>
+                  <td><%= label :user_type, "User type"%></td>
+                  <td><%= f.radio_button :user_type, true, :value => true%> Borrower
+                      <br>
+                      <%= f.radio_button :user_type, true, :value => false%> Lender
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+			</div>
+		</div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Contact</h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <table class="table table-user-information">
+              <tbody>
+                <tr>
+                  <td><%= f.label :email %></td>
+                  <td><%= f.email_field :email %></td>
+                </tr>
+                <tr>
+                  <td><%= f.label :"Mobile Number" %></td>
+                  <td><%= f.number_field :mobile_number, autofocus: true %></td>
+                </tr>
+                <tr>
+                  <td><%= f.label :"Country" %></td>
+                  <td><%= f.text_field :address, autofocus: true %></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+			</div>
+		</div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Other details</h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <table class="table table-user-information">
+              <tbody>
+                <tr>
+                  <td><%= f.label :"Banck account Number" %></td>
+                  <td><%= f.number_field :account_number, autofocus: true %></td>
+                </tr>
+                <tr>
+                  <td><%= f.label :"BSB" %></td>
+                  <td><%= f.number_field :bsb, autofocus: true %></td>
+                </tr>
+                <tr>
+                  <td><%= f.label :"Drivers License number" %></td>
+                  <td><%= f.number_field :driver_id, autofocus: true %></td>
+                </tr>
+                <tr>
+                  <td><%= f.label :"Drivers License photo" %></td>
+                  <td><input type="file" name="avatar" id="avatar"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+			</div>
+		</div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Passwrod</h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <table class="table table-user-information">
+              <tbody>
+                <tr>
+                  <td><%= f.label :password %></td>
+                  <td><%= f.password_field :password, autocomplete: "off" %>
+                    <br>
+                      <i>(leave blank if you don't want to change it)</i>
+                  </td>
+                </tr>
+                <tr>
+                  <td><%= f.label :password_confirmation %></td>
+                  <td><%= f.password_field :password_confirmation, autocomplete: "off" %></td>
+                </tr>
+                <tr>
+                  <td><%= f.label :current_password %></td>
+                  <td><%= f.password_field :current_password, autocomplete: "off" %>
+                    <br>
+                      <i>(we need your current password to confirm your changes)</i>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+			</div>
+            <div><%= f.submit "Update" %></div>
+		</div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Cancel my account</h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <table class="table table-user-information">
+              <tbody>
+                <tr>
+                  <td>Unhappy?</td>
+                  <td><%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+</div>
 
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
     <% end %>
 
-    <div><%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-    <%= f.password_field :password, autocomplete: "off" %></div>
+    <div><br />
+    </div>
 
-    <div><%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
+    <div><br />
+    </div>
 
-    <div><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "off" %></div>
+    <div> <<br />
+    </div>
 
-    <div><%= f.submit "Update" %></div>
+    
 <% end %>
 
-    <h3>Cancel my account</h3>
+    <h3></h3>
 
-    <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+    <p> </p>
 
     <%= link_to "Back", :back %>
