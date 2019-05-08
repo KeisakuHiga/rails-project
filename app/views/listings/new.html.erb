@@ -1,24 +1,20 @@
-
-
-<%= form_with scope: :listing, url: listings_path, local: true do |form| %>
-  <p>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
-  </p>
- 
-  <p>
-    <%= form.label :amount %><br>
-    <%= form.text_field :amount %>
-  </p>
-
-  <p>
-    <%= form.label :description %><br>
-    <%= form.text_area :description %>
-  </p>
- 
-  <p>
-    <%= form.submit %>
-  </p>
-<% end %>
-
-<%= link_to 'To Listings', listings_path %>
+<div class="new-listing-container">
+  <%= form_with scope: :listing, url: listings_path, local: true do |form| %>
+    <div class="listing-title">
+        <%= form.label :title %><br>
+        <%= form.text_field :title %>
+    </div>
+    <div class="listing-amount">
+        <%= form.label :listing_amount %><br>
+        <%= form.text_field :listing_amount %>
+    </div>
+    <div class="listing-description">
+        <%= form.label :description %><br>
+        <%= form.text_area :description, :cols => 43, :rows => 10 %>
+    </div>
+    <div class="listing-submit-button">
+        <%= form.submit 'Create a new listing', class: 'btn btn-primary' %>
+    </div>
+  <% end %>
+  <%= link_to 'To Listings', listings_path %>
+</div>

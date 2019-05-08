@@ -19,3 +19,18 @@
   .texta {
     text-align: center
   }
+
+.new-listing-container {
+  // display: flex;
+  margin: 0 30%;
+}
+
+input[type="text"] {
+  width: 300px;
+  height: 40px;
+}
+
+input[type="text_area"] {
+  width: 300px;
+  height: 40px;
+}

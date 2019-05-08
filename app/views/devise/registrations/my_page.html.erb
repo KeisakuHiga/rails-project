@@ -10,32 +10,30 @@
         </div>
         <div class="panel-body">
           <div class="row">
-            <div class=" col-md-9 col-lg-9 ">
-              <table class="table table-user-information">
-                <tbody>
-                  <tr>
-                    <td>Name</td>
-                    <td><%= current_user.name %></td>
-                  </tr>
-                  <tr>
-                    <td>Date of birth</td>
-                    <td><%= current_user.dob %></td>
-                  </tr>
-                  <tr>
-                    <td>User type</td>
-                    <% if current_user.user_type == true %>
-                      <td>Borrower</td>
-                    <% else %>
-                      <td>Lender</td>
-                    <% end %>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <table class="table table-user-information">
+              <tbody>
+                <tr>
+                  <td>Name</td>
+                  <td><%= current_user.name %></td>
+                </tr>
+                <tr>
+                  <td>Date of birth</td>
+                  <td><%= current_user.dob %></td>
+                </tr>
+                <tr>
+                  <td>User type</td>
+                  <% if current_user.user_type == true %>
+                    <td>Borrower</td>
+                  <% else %>
+                    <td>Lender</td>
+                  <% end %>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -47,24 +45,26 @@
         </div>
         <div class="panel-body">
           <div class="row">
-            <div class=" col-md-9 col-lg-9 ">
-              <table class="table table-user-information">
-                <tbody>
-                  <tr>
-                    <td>Email</td>
-                    <td><%= current_user.email %></td>
-                  </tr>
-                  <tr>
-                    <td>Mobile number</td>
-                    <td><%= current_user.mobile_number %></td>
-                  </tr>
-                  <tr>
-                    <td>Country</td>
-                    <td><%= current_user.address %></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <table class="table table-user-information">
+              <tbody>
+                <tr>
+                  <td>Email</td>
+                  <td><%= current_user.email %></td>
+                </tr>
+                <tr>
+                  <td>Mobile number</td>
+                  <td><%= current_user.mobile_number %></td>
+                </tr>
+                <tr>
+                  <td>Country</td>
+                  <td><%= current_user.address %></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -76,28 +76,30 @@
         </div>
         <div class="panel-body">
           <div class="row">
-            <div class=" col-md-9 col-lg-9 ">
-              <table class="table table-user-information">
-                <tbody>
-                  <tr>
-                    <td>Bank account number</td>
-                    <td><%= current_user.account_number %></td>
-                  </tr>
-                  <tr>
-                    <td>BSB</td>
-                    <td><%= current_user.bsb %></td>
-                  </tr>
-                  <tr>
-                    <td>Drivers license number</td>
-                    <td><%= current_user.driver_id %></td>
-                  </tr>
-                  <tr>
-                    <td>Drivers license photo</td>
-                    <td><%= image_tag current_user.avatar, class: 'drivers-license-image-size' %></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <table class="table table-user-information">
+              <tbody>
+                <tr>
+                  <td>Bank account number</td>
+                  <td><%= current_user.account_number %></td>
+                </tr>
+                <tr>
+                  <td>BSB</td>
+                  <td><%= current_user.bsb %></td>
+                </tr>
+                <tr>
+                  <td>Drivers license number</td>
+                  <td><%= current_user.driver_id %></td>
+                </tr>
+                <tr>
+                  <td>Drivers license photo</td>
+                  <td><%= image_tag current_user.avatar, class: 'drivers-license-image-size' %></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
