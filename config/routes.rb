@@ -34,7 +34,7 @@ Rails.application.routes.draw do
   # get "/listings/:id/edit", to: "listings#edit", as: "edit_listing"
   patch "/listings/:id/edit", to: "listings#update"
   # delete "/listings", to: "listings#destroy"
-
+  
   # offers
   # get "/offers", to: "offers#index", as: "offers"
   # post "/listings/:id", to: "offers#create"
@@ -44,7 +44,7 @@ Rails.application.routes.draw do
   # delete "/offers/:id", to: "offers#destroy", as: "delete_offer"
   # get "/offers/:id/edit", to: "offers#edit", as: "edit_offer"
   patch "/listings/:id/offers/:id/edit", to: "offers#update"
+  get "/offers/your_offers", to: "offers#your_offers", as: "your_offers"
   get "/welcome/your", to: "welcome#your", as: "your_listing"
-  get "/welcome/offers", to: "welcome#offers", as: "your_offers"
   
 end

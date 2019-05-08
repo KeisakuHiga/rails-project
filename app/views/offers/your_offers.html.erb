@@ -1,0 +1,19 @@
+<h1>Your Offers</h1>
+<% if user_signed_in? %>
+  <% if current_user.user_type == false %>
+    <div class="index-page">
+      <div class="bookshelf">
+        <% @your_offers.each do |offer| %>
+          <div class="book-card bg-light">
+            <div class="book-description">
+              <p> # <%= offer.id %></p>
+              <p> Interest: <%= offer.interest %></p>
+              <p> Description: <%= offer.description %></p>
+            </div>
+            <%= link_to 'Go to the listing', listing_path(offer.listing) %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+<% end %>

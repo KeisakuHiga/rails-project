@@ -12,10 +12,4 @@ class WelcomeController < ApplicationController
 
   end
 
-  def offers
-  end
-
-  def about
-  end
-  
 end
