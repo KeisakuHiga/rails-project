@@ -6,74 +6,69 @@
   </div>
   <div class="row">
     
-    <%= render 'basic_user_info' %>
+  <%= render 'basic_user_info' %>
 
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
-      <div class="panel panel-info">
-        <div class="panel-heading">
-          <h3 class="panel-title">Password</h3>
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">Password</h3>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <table class="table table-user-information">
+            <tbody>
+              <tr>
+                <td><%= f.label :password %></td>
+                <td><%= f.password_field :password, autocomplete: "off" %>
+                  <br>
+                    <i>(leave blank if you don't want to change it)</i>
+                </td>
+              </tr>
+              <tr>
+                <td><%= f.label :password_confirmation %></td>
+                <td><%= f.password_field :password_confirmation, autocomplete: "off" %></td>
+              </tr>
+              <tr>
+                <td><%= f.label :current_password %></td>
+                <td><%= f.password_field :current_password, autocomplete: "off" %>
+                  <br>
+                    <i>(we need your current password to confirm your changes)</i>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="panel-body">
-          <div class="row">
-            <table class="table table-user-information">
-              <tbody>
-                <tr>
-                  <td><%= f.label :password %></td>
-                  <td><%= f.password_field :password, autocomplete: "off" %>
-                    <br>
-                      <i>(leave blank if you don't want to change it)</i>
-                  </td>
-                </tr>
-                <tr>
-                  <td><%= f.label :password_confirmation %></td>
-                  <td><%= f.password_field :password_confirmation, autocomplete: "off" %></td>
-                </tr>
-                <tr>
-                  <td><%= f.label :current_password %></td>
-                  <td><%= f.password_field :current_password, autocomplete: "off" %>
-                    <br>
-                      <i>(we need your current password to confirm your changes)</i>
-                  </td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+      </div>
+    </div>
+    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+      <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+    <% end %>
+    <div><%= f.submit "Update" %></div>
+    <% end %>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">Cancel my account</h3>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <table class="table table-user-information">
+            <tbody>
+              <tr>
+                <td>Unhappy?</td>
+                <td><%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-			</div>
-      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-        <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-      <% end %>
-      <div><%= f.submit "Update" %></div>
-      <% end %>
-		</div>
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
-      <div class="panel panel-info">
-        <div class="panel-heading">
-          <h3 class="panel-title">Cancel my account</h3>
-        </div>
-        <div class="panel-body">
-          <div class="row">
-            <table class="table table-user-information">
-              <tbody>
-                <tr>
-                  <td>Unhappy?</td>
-                  <td><%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-			</div>
-		</div>
-    <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
-			<p class=" text-info">Created at: <%= current_user.created_at %></p>
-      <p class=" text-info">Updated at: <%= current_user.updated_at %></p>
-		</div>
-	</div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <%= link_to "Back", :back %>
