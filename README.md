@@ -93,16 +93,14 @@
 <a name="6"></a>
 
 ## 6. Answers to the Short Answer questions
-1. What is the need (i.e. challenge) that you will be addressing in your project?
+### 1. What is the need (i.e. challenge) that you will be addressing in your project?
 	
-Answer: 
-	The problem we are addressing is for people who want quick loans in a competitive markertplace where loans sharks compete against each other for the lowest interest rate to offer the loan requester.
+&lt;p&gt;The problem we are addressing is for people who want quick loans in a competitive markertplace where loans sharks compete against each other for the lowest interest rate to offer the loan requester.
 
 
-2. Identify the problem you’re trying to solve by building this particular marketplace App? Why is it a problem that needs solving?
+### 2. Identify the problem you’re trying to solve by building this particular marketplace App? Why is it a problem that needs solving?
 
-Answer: 
-	The problem is that users can't get decent interest rates on there loans sometimes due to going to a single place for a loan. This solves that issue as they can get multiple loan offers and review them.
+&lt;p&gt;The problem is that users can't get decent interest rates on there loans sometimes due to going to a single place for a loan. This solves that issue as they can get multiple loan offers and review them.
 
 
 3. Describe the project will you be conducting and how. your App will address the needs.
