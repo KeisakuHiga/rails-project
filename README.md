@@ -28,26 +28,68 @@
 
 ## 2. A link to the GitHub repository
 
-<a name=""></a>
+<a name="3"></a>
 
 ## 3. Description of the project
 
-<a name=""></a>
+<a name="3-1"></a>
 
 ### 3.1 Problem definition / purpose
+
+<a name="3-2"></a>
+
 ### 3.2 Functionality / features
+
+<a name="3-3"></a>
+
 ### 3.3 Screenshots
+
+<a name="3-4"></a>
+
 ### 3.4 Tech stack (e.g. html, css, deployment platform, etc)
+
+<a name="3-5"></a>
+
 ### 3.5 Instructions on how to setup, configure and use the App
+
+<a name="4"></a>
+
 ## 4. Design documentation
+
+<a name="4-1"></a>
+
 ### 4.1 Design process
+
+<a name="4-2"></a>
+
 ### 4.2 User stories
+
+<a name="4-3"></a>
+
 ### 4.3 A workflow diagram of the user journey/s
+
+<a name="4-4"></a>
+
 ### 4.4 Wireframes
-### 4.5 Database Entity Relationship Diagrams 
+
+<a name="4-5"></a>
+
+### 4.5 Database Entity Relationship Diagrams
+
+<a name="5"></a>
+
 ## 5. Details of planning process
+
+<a name="5-1"></a>
+
 ### 5.1 Project plan & timeline
+
+<a name="5-2"></a>
+
 ### 5.2 Screenshots of Trello board(s)
+
+<a name="6"></a>
+
 ## 6. Answers to the Short Answer questions
 1. What is the need (i.e. challenge) that you will be addressing in your project?
 	
