@@ -1,28 +1,54 @@
 # README
 
-## This file should contain,
+## Table of contents
+1. [A link (URL) to the published App](#1)
+2. [A link to the GitHub repository](#2)
+3. [Description of the project](#3)
+	* [Problem definition / purpose](#3-1)
+	* [Functionality / features](#3-2)
+	* [Screenshots](#3-3)
+	* [Tech stack (e.g. html, css, deployment platform, etc)](#3-4)
+	* [Instructions on how to setup, configure and use the App](#3-5)
+4. [Design documentation](#4)
+	* [Design process](#4-1)
+	* [User stories](#4-2)
+	* [A workflow diagram of the user journey/s](#4-3)
+	* [Wireframes](#4-4)
+	* [Database Entity Relationship Diagrams](#4-5)
+5. [Details of planning process](#5)
+	* [Project plan & timeline](#5-1)
+	* [Screenshots of Trello board(s)](#5-2)
+6. [Answers to the Short Answer questions](#6)
 
-1. A link (URL) to your published/App/
-2. A link to your GitHub repository
-	* Ensure the repo is accessible by your Educators
-3. Description of your project, including,
-	* Problem definition / purpose
-	* Functionality / features
-	* Screenshots
-	* Tech stack (e.g. html, css, deployment platform, etc)
-	* Instructions on how to setup, configure and use your/App/.
-4. Design documentation including,
-	* Design process
-	* User stories
-	* A workflow diagram of the user journey/s.
-	* Wireframes
-	* Database Entity Relationship Diagrams
-5. Details of planning process including,
-	* Project plan & timeline
-	* Screenshots of Trello board(s)
+<a name="1"></a>
 
+## 1. A link (URL) to the published App
 
-## 23 Short Questions
+<a name="2"></a>
+
+## 2. A link to the GitHub repository
+
+<a name=""></a>
+
+## 3. Description of the project
+
+<a name=""></a>
+
+### 3.1 Problem definition / purpose
+### 3.2 Functionality / features
+### 3.3 Screenshots
+### 3.4 Tech stack (e.g. html, css, deployment platform, etc)
+### 3.5 Instructions on how to setup, configure and use the App
+## 4. Design documentation
+### 4.1 Design process
+### 4.2 User stories
+### 4.3 A workflow diagram of the user journey/s
+### 4.4 Wireframes
+### 4.5 Database Entity Relationship Diagrams 
+## 5. Details of planning process
+### 5.1 Project plan & timeline
+### 5.2 Screenshots of Trello board(s)
+## 6. Answers to the Short Answer questions
 1. What is the need (i.e. challenge) that you will be addressing in your project?
 	
 Answer: 
