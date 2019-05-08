@@ -46,11 +46,12 @@
     <% if current_user.user_type == true && current_user.id == @listing.user_id && @listing.status == false %> 
       <% @amount =  @listing.amount * offer.interest * offer.months / 12 %>
       <%= render "layouts/shared/stripe_form", amount: @amount, offer_id: offer.id %>
+          <% end %>
     </div>
 
     </div>
     </div>
-    <% end %>
+
 
     <p>
       <% if (user_signed_in? && current_user.id == offer.user_id) %>
