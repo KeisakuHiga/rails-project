@@ -1,46 +1,153 @@
 <%= current_user.email if user_signed_in? %>
 
-<h1>My Profile</h1>
-<p><%= link_to 'Edit profile', edit_user_registration_path %></p>
-
-<div class="my_page">
-  <p>
-    Name: <%= current_user.name %>
-  </p>
-  <p>
-    email: <%= current_user.email %>
-  </p>
-  <p>
-  <% if current_user.user_type == true %>
-    user_type: Borrower
-  </p>
-  <% else %>
-  <p>
-    user_type: Lender
-    </p>
-    <% end %>
-  <p>
-    mobile_number: <%= current_user.mobile_number %>
-  </p>
-  <p>
-    address: <%= current_user.address %>
-  </p>
-  <p>
-    dob: <%= current_user.dob %>
-  </p>
-  <p>
-    bank_name: <%= current_user.bank_name %>
-  </p>
-  <p>
-    account_number: <%= current_user.account_number %>
-  </p>
-  <p>
-    bsb: <%= current_user.bsb %>
-  </p>
-  <p>
-    driver_id: <%= current_user.driver_id %>
-  </p>
-
-  <%= image_tag current_user.avatar, class: 'image-size' %>
-
-<p><%= link_to "Log Out", destroy_user_session_path, method: :delete %></p>
+<div class="container">
+  <h1>Personal Information</h1>
+  <div class="row">
+    <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
+      <p><%= link_to 'Edit profile', edit_user_registration_path %></p>
+      <p><%= link_to "Log Out", destroy_user_session_path, method: :delete %></p>
+      <p class=" text-info"><%= Date.today %></p>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Profile</h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-3 col-lg-3 " align="center">
+              <img alt="User Pic" src="http://babyinfoforyou.com/wp-content/uploads/2014/10/avatar-300x300.png" class="img-circle img-responsive">
+            </div>
+            <div class=" col-md-9 col-lg-9 ">
+              <table class="table table-user-information">
+                <tbody>
+                  <tr>
+                    <td>Name:</td>
+                    <td><%= current_user.name %></td>
+                  </tr>
+                  <tr>
+                    <td>Hire date:</td>
+                    <td>06/23/2013</td>
+                  </tr>
+                  <tr>
+                    <td>Date of Birth</td>
+                    <td>01/24/1988</td>
+                  </tr>
+                  <tr>
+                    <td>Gender</td>
+                    <td>Female</td>
+                  </tr>
+                  <tr>
+                    <td>Home Address</td>
+                    <td>Kathmandu,Nepal</td>
+                  </tr>
+                  <tr>
+                    <td>Email</td>
+                    <td><a href="mailto:info@support.com">info@support.com</a></td>
+                  </tr>
+                    <td>Phone Number</td>
+                    <td>123-4567-890(Landline)<br><br>555-4567-890(Mobile)
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Profile</h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-3 col-lg-3 " align="center">
+              <img alt="User Pic" src="http://babyinfoforyou.com/wp-content/uploads/2014/10/avatar-300x300.png" class="img-circle img-responsive">
+            </div>
+            <div class=" col-md-9 col-lg-9 ">
+              <table class="table table-user-information">
+                <tbody>
+                  <tr>
+                    <td>Name:</td>
+                    <td><%= current_user.name %></td>
+                  </tr>
+                  <tr>
+                    <td>Hire date:</td>
+                    <td>06/23/2013</td>
+                  </tr>
+                  <tr>
+                    <td>Date of Birth</td>
+                    <td>01/24/1988</td>
+                  </tr>
+                  <tr>
+                    <td>Gender</td>
+                    <td>Female</td>
+                  </tr>
+                  <tr>
+                    <td>Home Address</td>
+                    <td>Kathmandu,Nepal</td>
+                  </tr>
+                  <tr>
+                    <td>Email</td>
+                    <td><a href="mailto:info@support.com">info@support.com</a></td>
+                  </tr>
+                    <td>Phone Number</td>
+                    <td>123-4567-890(Landline)<br><br>555-4567-890(Mobile)
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Profile</h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-3 col-lg-3 " align="center">
+              <img alt="User Pic" src="http://babyinfoforyou.com/wp-content/uploads/2014/10/avatar-300x300.png" class="img-circle img-responsive">
+            </div>
+            <div class=" col-md-9 col-lg-9 ">
+              <table class="table table-user-information">
+                <tbody>
+                  <tr>
+                    <td>Name:</td>
+                    <td><%= current_user.name %></td>
+                  </tr>
+                  <tr>
+                    <td>Hire date:</td>
+                    <td>06/23/2013</td>
+                  </tr>
+                  <tr>
+                    <td>Date of Birth</td>
+                    <td>01/24/1988</td>
+                  </tr>
+                  <tr>
+                    <td>Gender</td>
+                    <td>Female</td>
+                  </tr>
+                  <tr>
+                    <td>Home Address</td>
+                    <td>Kathmandu,Nepal</td>
+                  </tr>
+                  <tr>
+                    <td>Email</td>
+                    <td><a href="mailto:info@support.com">info@support.com</a></td>
+                  </tr>
+                    <td>Phone Number</td>
+                    <td>123-4567-890(Landline)<br><br>555-4567-890(Mobile)
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
