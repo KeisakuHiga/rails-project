@@ -2,12 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
- body {
-  background-image: url(asset_path('owen-cl-123303-unsplash.jpg'));
+ .body2 {
+  background-image: url(asset_path('piggy.jpg'));
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #464646;
+  height: 90vh;
+  position:cover;
 }
-
