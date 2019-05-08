@@ -23,13 +23,9 @@
                   <td><%= f.date_select :dob, :start_year => Date.current.year, :end_year => 1920 %></td>
                 </tr>
                 <tr>
-                  <td><div><%= label :user_type, "User Type"%></td>
-                  <td><%= f.radio_button :user_type, true, :value => true%></div> Borrower  </td>
-                    <br>
-                      
-                  <td><div><%= label :user_type, "" %>
-                       <%= f.radio_button :user_type, false , :checked => true , :value => false %> Lender </div>
-                  </td>
+                  <td><%= f.label :user_type, "User Type"%></td>
+                  <td><%= f.radio_button :user_type, true, :value => true%> Borrower
+                      <%= f.radio_button :user_type, false , :checked => true , :value => false %> Lender</td>
                 </tr>
                 <tr>
                   <td></td>
