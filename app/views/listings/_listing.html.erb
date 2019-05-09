@@ -14,10 +14,15 @@
           <p><%= @listing.description %></p>
         </div>
         <div class="listing-posted-at">
-          <p>Posted at: <%= @listing.created_at.strftime("%b. %d, %Y") %></p>
-          <p>Updated at: <%= @listing.updated_at.strftime("%b. %d, %Y") %></p>
+          <p><strong>Posted at</strong>: <%= @listing.created_at.strftime("%b. %d, %Y") %></p>
+          <p><strong>Updated at</strong>: <%= @listing.updated_at.strftime("%b. %d, %Y") %></p>
         </div>
-        <% if (user_signed_in? && current_user.id == @listing.user_id)%>
+
+        <% if (user_signed_in? && current_user.id == @listing.user_id && @listing.status == false)%>
+          <div class="listing-edit-button">
+            <%= link_to "Edit", edit_listing_path %>
+          </div>
+
           <div class="listing-delete-button">
             <%= link_to "Delete", @listing,
                       method: :delete,
