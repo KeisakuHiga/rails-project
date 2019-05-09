@@ -59,7 +59,6 @@ The way the project works is there will be two user accounts, loan requesters an
 8. [Stripe](https://stripe.com/au)
 9. [AWS S3](https://aws.amazon.com/s3/)
 10. [Postgresql](https://www.postgresql.org/)
-11. [imgur](https://imgur.com)
 
 
 <a name="3-5"></a>
@@ -85,10 +84,27 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 <a name="4-4"></a>
 
 ### 4.4 Wireframes
+<Hero image><br>
+<img src="https://i.imgur.com/8NGc8QY.jpg" width="600"><br>
+
+<Sign up & update user info.><br>
+<img src="https://i.imgur.com/ZTyYEW6.jpg" width="600"><br>
+
+<Log in><br>
+<img src="https://i.imgur.com/IC3J2pD.jpg"  width="600"><br>
+
+<User information><br>
+<img src="https://i.imgur.com/KpTUmho.jpg"  width="600"><br>
+
+<Requesting page><br>
+<img src="https://i.imgur.com/rCssCih.jpg"  width="600"><br>
+
+
 
 <a name="4-5"></a>
 
 ### 4.5 Database Entity Relationship Diagrams
+<img src="https://i.imgur.com/MglJNx6.png" width="600"><br>
 
 <a name="5"></a>
 
