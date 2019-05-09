@@ -115,7 +115,7 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 <a name="5-1"></a>
 
 ### 5.1 Project plan & timeline
-1. Week 1st
+#### Week 1st
 * Day 1<br>
 &nbsp;&nbsp;&nbsp; - Discussing and sharing the project(application) ideas each other<br>
 &nbsp;&nbsp;&nbsp; - Deciding the theme -> “Peer to Peer loan app”<br>
@@ -141,7 +141,7 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 &nbsp;&nbsp;&nbsp; - Implementing the two feature for the app<br>
 
 
-2. Week 2nd
+#### Week 2nd
 * Day6<br>
 &nbsp;&nbsp;&nbsp; - Debugging for the payment feature function<br>
 &nbsp;&nbsp;&nbsp; - Debugging for the image uploading function(part1)<br>
@@ -165,7 +165,7 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 <a name="5-2"></a>
 
 ### 5.2 Screenshots of Trello board(s)
-[Project Trello board](https://trello.com/b/Gi97qS4B/givememoney)<br><br>
+[Link of the project Trello board](https://trello.com/b/Gi97qS4B/givememoney)<br><br>
 <Apr.29><br>
 <img src="https://i.imgur.com/PacJrFM.png" width="500"><br>
 <Apr.30><br>
@@ -181,7 +181,7 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 <May.07><br>
 <img src="https://i.imgur.com/E0uycaT.png" width="500"><br>
 <May.08><br>
-<!-- <img src="https://i.imgur.com/7jEQhVe.png" width="500"><br> -->
+<img src="https://i.imgur.com/7jEQhVe.png" width="500"><br>
 <May.09><br>
 <!-- <img src="" width="500"><br> -->
 
