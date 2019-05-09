@@ -137,21 +137,30 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 &nbsp;&nbsp;&nbsp; - Implementing more complecated functions such as 'update' and 'delete' data<br>
 * Day 5<br>
 &nbsp;&nbsp;&nbsp; - Adding the payment feature by 'Stripe' gem<br>
-&nbsp;&nbsp;&nbsp; - Implementing the feature for the app<br>
 &nbsp;&nbsp;&nbsp; - Adding the image uploading feature by 'AWS S3' servise<br>
+&nbsp;&nbsp;&nbsp; - Implementing the two feature for the app<br>
 
 
 2. Week 2nd
 * Day6<br>
-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; - Debugging for the payment feature function<br>
+&nbsp;&nbsp;&nbsp; - Debugging for the image uploading function(part1)<br>
 * Day7<br>
-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; - Adding some new pages depending on user types<br>
+&nbsp;&nbsp;&nbsp; - Designing the app pages by Bootstrap<br>
+&nbsp;&nbsp;&nbsp; - Starging refactoring codes<br>
 * Day8<br>
-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; - Going through the app and finding the bugs<br>
+&nbsp;&nbsp;&nbsp; - Debugging  the bugs
+&nbsp;&nbsp;&nbsp; - Designing more
 * Day9<br>
-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; - Debugging for the image uploading function(part2)<br>
+&nbsp;&nbsp;&nbsp; - Designing more
+&nbsp;&nbsp;&nbsp; - Strating writing README.md
 * Day10<br>
-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; - Debugging and designing more
+&nbsp;&nbsp;&nbsp; - Finishing README.md
+&nbsp;&nbsp;&nbsp; - Submitting the assignment
 
 <a name="5-2"></a>
 
