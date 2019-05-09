@@ -46,6 +46,8 @@ The way the project works is there will be two user accounts, loan requesters an
 
 ### 3.3 Screenshots
 
+
+
 <a name="3-4"></a>
 
 ### 3.4 Tech stack (e.g. html, css, deployment platform, etc)

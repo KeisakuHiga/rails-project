@@ -1,6 +1,8 @@
 
 <% if current_user.user_type == false %>
-
+  <div class="texta">
+    <h1>Update Your Offer</h1>
+  </div>
   <div class="edit-offer-container">
 
   <%= form_for @offer, url: edit_listing_offer_path(@offer.listing_id), html: {class: "edit-form"},:action => "update" do |form| %>
