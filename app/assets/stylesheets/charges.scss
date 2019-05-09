@@ -2,6 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+.body2 {
+  background-image: url(asset_path('piggy.jpg'));
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 90vh;
+  position:cover;
+}
+
 .thank-you-for-your-payment {
   margin: 0 50%;
 }
