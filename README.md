@@ -115,33 +115,42 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 <a name="5-1"></a>
 
 ### 5.1 Project plan & timeline
-1. Week 1
-* Day 1
-&nbsp;&nbsp;&nbsp; - Discussing and sharing the project(application) ideas each other.
-&nbsp;&nbsp;&nbsp; - Deciding the theme -> “Peer to Peer loan app”
-&nbsp;&nbsp;&nbsp; - Setting up the developing environment (Github, ruby version)
-&nbsp;&nbsp;&nbsp; - Drawing the app's wireframe roughly by handwriting
-&nbsp;&nbsp;&nbsp; - Planning about the project plan
-* Day 2
-&nbsp;&nbsp;&nbsp; - Setting up Trello boad and fill out the tasks to build a MVP for the project
-&nbsp;&nbsp;&nbsp; - Starting the Ruby on rails app and deploying it to Heroku with the basic contents
-&nbsp;&nbsp;&nbsp; - 
-* Day 3
+1. Week 1st
+* Day 1<br>
+&nbsp;&nbsp;&nbsp; - Discussing and sharing the project(application) ideas each other<br>
+&nbsp;&nbsp;&nbsp; - Deciding the theme -> “Peer to Peer loan app”<br>
+&nbsp;&nbsp;&nbsp; - Setting up the developing environment (Github, ruby version)<br>
+&nbsp;&nbsp;&nbsp; - Drawing the app's wireframe roughly by handwriting<br>
+&nbsp;&nbsp;&nbsp; - Planning about the project plan<br>
+* Day 2<br>
+&nbsp;&nbsp;&nbsp; - Setting up Trello boad and fill out the tasks to build a MVP for the project<br>
+&nbsp;&nbsp;&nbsp; - Starting the Ruby on rails app and deploying it to Heroku with the basic contents<br>
+&nbsp;&nbsp;&nbsp; - Getting the approval about the database ERD<br>
+&nbsp;&nbsp;&nbsp; - Starting coding of application fundations ('Model', 'View', and 'Controller')<br>
+* Day 3<br>
+&nbsp;&nbsp;&nbsp; - Adding the authentication feature by 'Devise' gem<br>
+&nbsp;&nbsp;&nbsp; - Implementing the feature for the app<br>
+* Day 4<br>
+&nbsp;&nbsp;&nbsp; - Adding the authorization feature by 'Cancancan' gem<br>
+&nbsp;&nbsp;&nbsp; - Implementing the feature for the app<br>
+&nbsp;&nbsp;&nbsp; - Using Bootstrap for the main show page to make the look better<br>
+&nbsp;&nbsp;&nbsp; - Implementing more complecated functions such as 'update' and 'delete' data<br>
+* Day 5<br>
+&nbsp;&nbsp;&nbsp; - Adding the payment feature by 'Stripe' gem<br>
+&nbsp;&nbsp;&nbsp; - Implementing the feature for the app<br>
+&nbsp;&nbsp;&nbsp; - Adding the image uploading feature by 'AWS S3' servise<br>
+
+
+2. Week 2nd
+* Day6<br>
 &nbsp;&nbsp;&nbsp;
-* Day 4
+* Day7<br>
 &nbsp;&nbsp;&nbsp;
-* Day 5
+* Day8<br>
 &nbsp;&nbsp;&nbsp;
-2. Week 2
-* Day6
+* Day9<br>
 &nbsp;&nbsp;&nbsp;
-* Day7
-&nbsp;&nbsp;&nbsp;
-* Day8
-&nbsp;&nbsp;&nbsp;
-* Day9
-&nbsp;&nbsp;&nbsp;
-* Day10
+* Day10<br>
 &nbsp;&nbsp;&nbsp;
 
 <a name="5-2"></a>
