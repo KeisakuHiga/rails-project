@@ -26,15 +26,12 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # GET /resource/edit
   # def edit
   #   super
-  #   @user = User.find(params[:id])
-  #   @avatar = @user.avatar
   # end
 
   # PUT /resource
   def update
     super
     if !params[:avatar].nil?
-    # if @user.avatar == nil
       @user.avatar.attach(params[:avatar])
     end
       @user.save!
