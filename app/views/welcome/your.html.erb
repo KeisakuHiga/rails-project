@@ -1,27 +1,26 @@
 <h1>Your listings</h1>
-
+<% if can? :create, Listing %>
+  <%= link_to 'Create a New List', new_listing_path %>
+<% end %>
 <%if user_signed_in? %>
-
-<% if current_user.user_type == true %>
-<div class="index-page">
-  <div class="bookshelf">
-  <% @listings = Listing.all %>
-    <% @listings.each do |listing| %>
-    <%if current_user.id == listing.user_id %>
-      <div class="book-card bg-light">
-        <div class="book-description">
-          <h4> <%= listing.title %></h4>
-          <p> Description: <%= listing.description %></p>
-        </div>
-        <div class="index-page-nav-links">
-            <button><%= link_to "show", listing %></button>
-        </div>
+  <% if current_user.user_type == true %>
+    <div class="index-page">
+      <div class="bookshelf">
+        <% @listings = Listing.all %>
+        <% @listings.each do |listing| %>
+          <%if current_user.id == listing.user_id %>
+            <div class="book-card bg-light">
+              <div class="book-description">
+                <h4> <%= listing.title %></h4>
+                <p> Description: <%= listing.description %></p>
+              </div>
+              <div class="index-page-nav-links">
+                <button><%= link_to "show", listing %></button>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
       </div>
-    <% end %>
-    <% end %>
-    <% end %>
-
-    <% end %>
-
-  </div>
-</div>
+    </div>
+  <% end %>
+<% end %>

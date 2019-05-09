@@ -4,11 +4,27 @@ class OffersController < ApplicationController
   #   @offer = @listing.offers.build
   #   respond_with(@offer)
   # end
-  
+  def your_offers
+    @offers = Offer.all
+    @your_offers = []
+    
+    @offers.each do |offer|
+      if offer.user_id == current_user.id
+        @your_offers << offer
+      end
+    end
+    return @your_offers
+  end
+
+  def go_to_listing_with_your_offer
+    
+  end
+
   def create
     @listing = Listing.find(params[:listing_id])
     @offer = @listing.offers.create(offer_params)
     @offer.user_id = current_user.id 
+    
     if @offer.save
       flash[:notice] = "Your offer successfully saved!!!"
       redirect_to listing_path(@listing.id)
@@ -17,15 +33,13 @@ class OffersController < ApplicationController
       listing_amount = @listing.amount
       @offers = @listing.offers
       @offers.each do |offer|
-      offer_interest = offer.interest
-      offer_month = offer.months
-      @amount = (listing_amount * offer_interest * offer_month / 12).to_i
+        offer_interest = offer.interest
+        offer_month = offer.months
+        @amount = (listing_amount * offer_interest * offer_month / 12).to_i
       end 
-
     else
       flash[:notice] = "Saving failed"
       redirect_to listing_path(@listing.id)
-
     end
   end
 

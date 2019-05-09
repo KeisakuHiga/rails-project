@@ -1,0 +1,27 @@
+<h1>Your Offers</h1>
+<% if user_signed_in? %>
+  <% if current_user.user_type == false %>
+    <div class="index-page">
+      <div class="bookshelf">
+        <% @your_offers.each do |offer| %>
+          <div class="book-card bg-light">
+            <div class="book-description">
+              <p> # <%= offer.id %></p>
+              <% if offer.listing.status == false %>
+                <h3>Pending</h3>
+              <% elsif offer.status == true%>
+                <h3>Accepted</h3>
+              <% else %>
+                <h3>Rejected</h3>
+              <% end %>
+              <p> Offered date: <%= offer.created_at.strftime("%b. %d, %Y") %></p>
+              <p> Interest rate: <%= offer.interest %> %</p>
+              <p> Description: <%= offer.description %></p>
+            </div>
+            <%= link_to 'Go to the request', listing_path(offer.listing) %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+<% end %>

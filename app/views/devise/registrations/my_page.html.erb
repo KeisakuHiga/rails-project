@@ -18,7 +18,7 @@
                 </tr>
                 <tr>
                   <td>Date of birth</td>
-                  <td><%= current_user.dob %></td>
+                  <td><%= current_user.dob.strftime("%b. %d, %Y") %></td>
                 </tr>
                 <tr>
                   <td>User type</td>
@@ -105,8 +105,8 @@
       </div>
     </div>
     <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
-      <p class=" text-info">Created at: <%= current_user.created_at %></p>
-      <p class=" text-info">Updated at: <%= current_user.updated_at %></p>
+      <p class=" text-info">Created at: <%= current_user.created_at.strftime("%b. %d, %Y") %></p>
+      <p class=" text-info">Updated at: <%= current_user.updated_at.strftime("%b. %d, %Y") %></p>
       <p><%= link_to 'Edit profile', edit_user_registration_path %></p>
       <p><%= link_to "Log Out", destroy_user_session_path, method: :delete %></p>
     </div>

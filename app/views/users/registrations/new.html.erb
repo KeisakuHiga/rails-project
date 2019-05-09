@@ -5,150 +5,40 @@
     <h2>Register</h2>
   </div>
   <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
-      <div class="panel panel-info">
-        <div class="panel-heading">
-          <h3 class="panel-title">Profile</h3>
+
+    <%= render 'basic_user_info' %>
+
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">Password</h3>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <table class="table table-user-information">
+            <tbody>
+              <tr>
+                <% if @minimum_password_length %>
+                  <td><%= f.label :password %><em> ( <%= @minimum_password_length %> characters minimum)</em></td>
+                  <td><%= f.password_field :password, autocomplete: "new-password" %></td>
+                <% end %>
+              </tr>
+              <tr>
+                <td><%= f.label :password_confirmation %></td>
+                <td><%= f.password_field :password_confirmation, autocomplete: "new-password" %></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="panel-body">
-          <div class="row">
-            <table class="table table-user-information">
-              <tbody>
-                <tr>
-                  <td><%= f.label :name %></td>
-                  <td><%= f.text_field :name, autofocus: true %></td>
-                </tr>
-                <tr>
-                  <td><%= f.label :date_of_birth %></td>
-                  <td><%= f.date_select :dob, :start_year => Date.current.year, :end_year => 1920 %></td>
-                </tr>
-                <tr>
-                  <td><div><%= label :user_type, "User Type"%></td>
-                  <td><%= f.radio_button :user_type, true, :value => true%></div> Borrower  </td>
-                    <br>
-                      
-                  <td><div><%= label :user_type, "" %>
-                       <%= f.radio_button :user_type, false , :checked => true , :value => false %> Lender </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-			</div>
-		</div>
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
-      <div class="panel panel-info">
-        <div class="panel-heading">
-          <h3 class="panel-title">Contact</h3>
-        </div>
-        <div class="panel-body">
-          <div class="row">
-            <table class="table table-user-information">
-              <tbody>
-                <tr>
-                  <td><%= f.label :email %></td>
-                  <td><%= f.email_field :email %></td>
-                </tr>
-                <tr>
-                  <td><%= f.label :"Mobile Number" %></td>
-                  <td><%= f.number_field :mobile_number, autofocus: true %></td>
-                </tr>
-                <tr>
-                  <td><%= f.label :"Country" %></td>
-                  <td><%= f.text_field :address, autofocus: true %></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-			</div>
-		</div>
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
-      <div class="panel panel-info">
-        <div class="panel-heading">
-          <h3 class="panel-title">Other details</h3>
-        </div>
-        <div class="panel-body">
-          <div class="row">
-            <table class="table table-user-information">
-              <tbody>
-                <tr>
-                  <td><%= f.label :"Banck account Number" %></td>
-                  <td><%= f.number_field :account_number, autofocus: true %></td>
-                </tr>
-                <tr>
-                  <td><%= f.label :"BSB" %></td>
-                  <td><%= f.number_field :bsb, autofocus: true %></td>
-                </tr>
-                <tr>
-                  <td><%= f.label :"Drivers License number" %></td>
-                  <td><%= f.number_field :driver_id, autofocus: true %></td>
-                </tr>
-                <tr>
-                  <td><%= f.label :"Drivers License photo" %></td>
-                  <td><input type="file" name="avatar" id="avatar"></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-			</div>
-		</div>
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
-      <div class="panel panel-info">
-        <div class="panel-heading">
-          <h3 class="panel-title">Password</h3>
-        </div>
-        <div class="panel-body">
-          <div class="row">
-            <table class="table table-user-information">
-              <tbody>
-                <tr>
-                
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+      </div>
+    </div>
+    <div><%= f.submit "Sign Up" %></div>
+    <% end %>
   </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
-                </tr>
-                <tr>
-
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-			</div>
-      <div><%= f.submit "Sign Up" %></div>
-      <% end %>
-		</div>
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
-
-	</div>
 </div>
 
 <%= link_to "Back", :back %>
