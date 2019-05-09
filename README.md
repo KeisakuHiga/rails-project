@@ -104,6 +104,12 @@ First the user signs up as a borrower, posts a listing and waits for offers. The
 <a name="4-1"></a>
 
 ### 4.1 Design process
+1. Reserching about the two sided-market application design
+3. Picking up some design features based on the research
+2. Drawing the wireframes and deciding the app design
+4. Finding the good materials that can be used for the app
+5. Implementing the materials
+6. Refactoring the codes as the materials can be fit for the app
 
 <a name="4-2"></a>
 
@@ -213,7 +219,7 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 <May.08><br>
 <img src="https://i.imgur.com/7jEQhVe.png" width="500"><br>
 <May.09><br>
-<!-- <img src="" width="500"><br> -->
+<img src="https://i.imgur.com/OcPrbYX.png" width="500"><br>
 
 
 
