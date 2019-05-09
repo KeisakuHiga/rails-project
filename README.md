@@ -60,10 +60,13 @@ The way the project works is there will be two user accounts, loan requesters an
 <img src="https://i.imgur.com/Amud3nw.png" width="500"><br>
 6. All loan requests page<br>
 <img src="https://i.imgur.com/99RnZf2.png" width="500"><br>
-<img src="https://i.imgur.com/qIVOATC.png" width="500"><br>
 7. One request page<br>
 <img src="https://i.imgur.com/oAyiClO.png" width="500"><br>
 <img src="https://i.imgur.com/y3XkBsu.png" width="500"><br>
+(payment page)<br>
+<img src="https://i.imgur.com/nVHhnhN.png" width="500"><br>
+(adding offer sectoin)<br>
+<img src="https://i.imgur.com/qIVOATC.png" width="500"><br>
 8. Create new request page<br>
 <img src="https://i.imgur.com/WGQpWJn.png" width="500"><br>
 9. Update offer page<br>
@@ -73,8 +76,7 @@ The way the project works is there will be two user accounts, loan requesters an
 <img src="https://i.imgur.com/br7FE5B.png" width="500"><br>
 (Lender side)<br>
 <img src="https://i.imgur.com/mP45o7l.png" width="500"><br>
-11. Payment screen<br>
-<img src="https://i.imgur.com/nVHhnhN.png" width="500"><br>
+
 
 <a name="3-4"></a>
 
