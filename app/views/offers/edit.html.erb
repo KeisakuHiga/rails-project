@@ -1,15 +1,20 @@
+<div class="edit-offer-container">
 <%= form_for @offer, url: edit_listing_offer_path(@offer.listing_id), html: {class: "edit-form"},:action => "update" do |form| %>
-
-  <%= form.label :interest %>
-  <%= form.text_field :interest %>
-
-  <%= form.label :months %>
-  <%= form.text_field :months %>
-
-  <%= form.label :description %>
-  <%= form.text_field :description %>
-
-  <%= form.submit 'Update offer', class: 'btn btn-primary' %>
+  <div class="offer-interest">
+    <%= form.label :interest_rate %>
+    <%= form.text_field :interest %>
+  </div>
+  <div class="offer-months">
+    <%= form.label :lending_term %>
+    <%= form.text_field :months %>
+  </div>
+  <div class="offer-description">
+    <%= form.label :description %>
+    <%= form.text_area :description, :cols => 43, :rows => 10 %>
+  </div>
+  <div class="offer-submit-button">
+    <%= form.submit 'Update offer', class: 'btn btn-primary' %>
+  </div>
 <% end %>
 
 <%= link_to "Back", :back  %>

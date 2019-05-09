@@ -6,7 +6,7 @@
         <% @your_offers.each do |offer| %>
           <div class="book-card bg-light">
             <div class="book-description">
-              <p> # <%= offer.id %></p>
+              <p> Offer # <%= offer.id %></p>
               <% if offer.listing.status == false %>
                 <h3>Pending</h3>
               <% elsif offer.status == true%>
