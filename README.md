@@ -102,8 +102,8 @@
 
 ### 5.2 Screenshots of Trello board(s)
 <Apr.29><Apr.30><br>
-<img src="https://i.imgur.com/PacJrFM.png" width="500">
-<img src="https://i.imgur.com/ek8Ix2I.png" width="500">
+<img src="https://i.imgur.com/PacJrFM.png" width="400">
+<img src="https://i.imgur.com/ek8Ix2I.png" width="400">
 
 
 
