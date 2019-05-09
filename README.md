@@ -49,6 +49,18 @@
 <a name="3-4"></a>
 
 ### 3.4 Tech stack (e.g. html, css, deployment platform, etc)
+1. HTML(ERB)
+2. CSS(SCSS)
+3. Bootstrap
+4. Ruby
+5. Ruby on rails
+6. GitHub
+7. [Heroku](https://www.heroku.com/)
+8. [Stripe](https://stripe.com/au)
+9. [AWS S3](https://aws.amazon.com/s3/)
+10. [Postgresql](https://www.postgresql.org/)
+
+
 
 <a name="3-5"></a>
 
