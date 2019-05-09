@@ -18,14 +18,12 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # POST /resource
   def create
     super
-    # @user.avatar.attach(params[:avatar])
-    # @user.save!
-    # root_path
+
     if !params[:avatar].nil?
       @user.avatar.attach(params[:avatar])
     end
-      @user.save!
-      root_path
+    @user.save!
+    root_path
   end
 
   # GET /resource/edit
