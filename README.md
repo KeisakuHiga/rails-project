@@ -101,7 +101,7 @@
 <a name="5-2"></a>
 
 ### 5.2 Screenshots of Trello board(s)
-<Apr.29><Apr.30><br>
+<Apr.29>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Apr.30><br>
 <img src="https://i.imgur.com/PacJrFM.png" width="400">
 <img src="https://i.imgur.com/ek8Ix2I.png" width="400">
 
