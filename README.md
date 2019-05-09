@@ -85,26 +85,26 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 
 ### 4.4 Wireframes
 <Hero image><br>
-<img src="https://i.imgur.com/8NGc8QY.jpg" width="600"><br>
+<img src="https://i.imgur.com/8NGc8QY.jpg" width="500"><br>
 
 <Sign up & update user info.><br>
-<img src="https://i.imgur.com/ZTyYEW6.jpg" width="600"><br>
+<img src="https://i.imgur.com/ZTyYEW6.jpg" width="500"><br>
 
 <Log in><br>
-<img src="https://i.imgur.com/IC3J2pD.jpg"  width="600"><br>
+<img src="https://i.imgur.com/IC3J2pD.jpg"  width="500"><br>
 
 <User information><br>
-<img src="https://i.imgur.com/KpTUmho.jpg"  width="600"><br>
+<img src="https://i.imgur.com/KpTUmho.jpg"  width="500"><br>
 
 <Requesting page><br>
-<img src="https://i.imgur.com/rCssCih.jpg"  width="600"><br>
+<img src="https://i.imgur.com/rCssCih.jpg"  width="500"><br>
 
 
 
 <a name="4-5"></a>
 
 ### 4.5 Database Entity Relationship Diagrams
-<img src="https://i.imgur.com/MglJNx6.png" width="600"><br>
+<img src="https://i.imgur.com/MglJNx6.png" width="500"><br>
 
 <a name="5"></a>
 
@@ -118,23 +118,23 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 
 ### 5.2 Screenshots of Trello board(s)
 <Apr.29><br>
-<img src="https://i.imgur.com/PacJrFM.png" width="600"><br>
+<img src="https://i.imgur.com/PacJrFM.png" width="500"><br>
 <Apr.30><br>
-<img src="https://i.imgur.com/ek8Ix2I.png" width="600"><br>
+<img src="https://i.imgur.com/ek8Ix2I.png" width="500"><br>
 <May.01><br>
-<img src="https://i.imgur.com/CLFw5p8.png" width="600"><br>
+<img src="https://i.imgur.com/CLFw5p8.png" width="500"><br>
 <May.02><br>
-<img src="https://i.imgur.com/3opvYZf.png" width="600"><br>
+<img src="https://i.imgur.com/3opvYZf.png" width="500"><br>
 <May.03><br>
-<img src="https://i.imgur.com/xwGG2ky.png" width="600"><br>
+<img src="https://i.imgur.com/xwGG2ky.png" width="500"><br>
 <May.06><br>
-<img src="https://i.imgur.com/IDyvJKy.png" width="600"><br>
+<img src="https://i.imgur.com/IDyvJKy.png" width="500"><br>
 <May.07><br>
-<img src="https://i.imgur.com/E0uycaT.png" width="600"><br>
+<img src="https://i.imgur.com/E0uycaT.png" width="500"><br>
 <May.08><br>
-<!-- <img src="https://i.imgur.com/7jEQhVe.png" width="600"><br> -->
+<!-- <img src="https://i.imgur.com/7jEQhVe.png" width="500"><br> -->
 <May.09><br>
-<!-- <img src="" width="600"><br> -->
+<!-- <img src="" width="500"><br> -->
 
 
 
@@ -206,7 +206,7 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 
 ### Q14. Provide your database schema design.
 
-<img src="https://i.imgur.com/MglJNx6.png" width="600"><br>
+<img src="https://i.imgur.com/MglJNx6.png" width="500"><br>
 
 
 
@@ -218,19 +218,19 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 ### Q16. Provide Wireframes for your App.
 
 <Hero image><br>
-<img src="https://i.imgur.com/8NGc8QY.jpg" width="600"><br>
+<img src="https://i.imgur.com/8NGc8QY.jpg" width="500"><br>
 
 <Sign up & update user info.><br>
-<img src="https://i.imgur.com/ZTyYEW6.jpg" width="600"><br>
+<img src="https://i.imgur.com/ZTyYEW6.jpg" width="500"><br>
 
 <Log in><br>
-<img src="https://i.imgur.com/IC3J2pD.jpg"  width="600"><br>
+<img src="https://i.imgur.com/IC3J2pD.jpg"  width="500"><br>
 
 <User information><br>
-<img src="https://i.imgur.com/KpTUmho.jpg"  width="600"><br>
+<img src="https://i.imgur.com/KpTUmho.jpg"  width="500"><br>
 
 <Requesting page><br>
-<img src="https://i.imgur.com/rCssCih.jpg"  width="600"><br>
+<img src="https://i.imgur.com/rCssCih.jpg"  width="500"><br>
 
 
 ### Q17. Describe the way tasks are allocated and tracked in your project.
