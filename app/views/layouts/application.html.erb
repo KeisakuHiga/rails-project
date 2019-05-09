@@ -26,11 +26,6 @@
           <a class="nav-link"  href="/">Home <span class="sr-only">(current)</span></a>
         </li>
 
-        <% if can? :create, Listing %>
-        <li class="nav-item">
-          <a class="nav-link" href="/listings/new">New Loan Request</a>
-        </li>
-        <% end %>
 
         <% if user_signed_in? %>
 
@@ -38,15 +33,21 @@
             <a class="nav-link" href="/listings">All Loan Requests</a>
           </li>
 
-          <% if current_user.user_type == false %>
-            <li class="nav-item">
-              <a class="nav-link" href="/offers/your_offers">My Offers</a>
-            </li>
+          <% if can? :create, Listing %>
+          <li class="nav-item">
+            <a class="nav-link" href="/listings/new">New Loan Request</a>
+          </li>
           <% end %>
 
           <% if current_user.user_type == true %>
             <li class="nav-item">
               <a class="nav-link" href="/welcome/your">My Loan Requests</a>
+            </li>
+          <% end %>
+
+          <% if current_user.user_type == false %>
+            <li class="nav-item">
+              <a class="nav-link" href="/offers/your_offers">My Offers</a>
             </li>
           <% end %>
 

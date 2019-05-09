@@ -102,9 +102,8 @@
 
 ### 5.2 Screenshots of Trello board(s)
 
-![Screenshot of Trello board(Apr 29)]()
+![Screenshot of Trello board(Apr 29)](https://github.com/KeisakuHiga/rails-project/master/public/images/SS_Trello_20190429_1700.png)
 
-<a name="6"></a>
 
 ## 6. Answers to the Short Answer questions
 ### Q1. What is the need (i.e. challenge) that you will be addressing in your project?
