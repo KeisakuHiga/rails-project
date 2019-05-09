@@ -101,8 +101,10 @@
 <a name="5-2"></a>
 
 ### 5.2 Screenshots of Trello board(s)
-
-<img src="https://i.imgur.com/PacJrFM.png" width="400">
+Apr.29
+<img src="https://i.imgur.com/PacJrFM.png" width="500">
+Apr.30
+<img src="https://i.imgur.com/ek8Ix2I.png" width="500">
 
 
 ## 6. Answers to the Short Answer questions
