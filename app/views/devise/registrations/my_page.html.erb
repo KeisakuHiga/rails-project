@@ -91,8 +91,10 @@
                   <td><%= current_user.driver_id %></td>
                 </tr>
                 <tr>
+                <% if current_user.avatar.attached? %>
                   <td>Drivers license photo</td>
                   <td><%= image_tag current_user.avatar, class: 'drivers-license-image-size' %></td>
+                  <% end %>
                 </tr>
                 <tr>
                   <td></td>
