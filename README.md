@@ -59,7 +59,7 @@ The way the project works is there will be two user accounts, loan requesters an
 8. [Stripe](https://stripe.com/au)
 9. [AWS S3](https://aws.amazon.com/s3/)
 10. [Postgresql](https://www.postgresql.org/)
-
+11. [imgur](https://imgur.com)
 
 
 <a name="3-5"></a>
@@ -101,10 +101,26 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 <a name="5-2"></a>
 
 ### 5.2 Screenshots of Trello board(s)
+<Apr.29><br>
+<img src="https://i.imgur.com/PacJrFM.png" width="600"><br>
+<Apr.30><br>
+<img src="https://i.imgur.com/ek8Ix2I.png" width="600"><br>
+<May.01><br>
+<img src="https://i.imgur.com/CLFw5p8.png" width="600"><br>
+<May.02><br>
+<img src="https://i.imgur.com/3opvYZf.png" width="600"><br>
+<May.03><br>
+<img src="https://i.imgur.com/xwGG2ky.png" width="600"><br>
+<May.06><br>
+<img src="https://i.imgur.com/IDyvJKy.png" width="600"><br>
+<May.07><br>
+<img src="https://i.imgur.com/E0uycaT.png" width="600"><br>
+<May.08><br>
+<!-- <img src="https://i.imgur.com/7jEQhVe.png" width="600"><br> -->
+<May.09><br>
+<!-- <img src="" width="600"><br> -->
 
-![Screenshot of Trello board(Apr 29)]()
 
-<a name="6"></a>
 
 ## 6. Answers to the Short Answer questions
 ### Q1. What is the need (i.e. challenge) that you will be addressing in your project?
