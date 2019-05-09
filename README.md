@@ -102,7 +102,7 @@
 
 ### 5.2 Screenshots of Trello board(s)
 
-![Screenshot of Trello board(Apr 29)](https://github.com/KeisakuHiga/rails-project/master/public/images/SS_Trello_20190429_1700.png)
+![Screenshot of Trello board(Apr 29)](https://github.com/KeisakuHiga/rails-project/k/public/images/SS_Trello_20190429_1700.png)
 
 
 ## 6. Answers to the Short Answer questions
