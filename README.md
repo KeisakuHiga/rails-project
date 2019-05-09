@@ -101,9 +101,24 @@
 <a name="5-2"></a>
 
 ### 5.2 Screenshots of Trello board(s)
-<Apr.29>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Apr.30><br>
-<img src="https://i.imgur.com/PacJrFM.png" width="400">
-<img src="https://i.imgur.com/ek8Ix2I.png" width="400">
+<Apr.29><br>
+<img src="https://i.imgur.com/PacJrFM.png" width="600">
+<Apr.30><br>
+<img src="https://i.imgur.com/ek8Ix2I.png" width="600">
+<May.01><br>
+<img src="https://i.imgur.com/CLFw5p8.png" width="600">
+<May.02><br>
+<img src="https://i.imgur.com/3opvYZf.png" width="600">
+<May.03><br>
+<img src="https://i.imgur.com/xwGG2ky.png" width="600">
+<May.06><br>
+<img src="https://i.imgur.com/IDyvJKy.png" width="600">
+<May.07><br>
+<img src="https://i.imgur.com/E0uycaT.png" width="600">
+<May.08><br>
+<img src="https://i.imgur.com/7jEQhVe.png" width="600">
+<May.09><br>
+<img src="" width="600">
 
 
 
