@@ -101,10 +101,10 @@
 <a name="5-2"></a>
 
 ### 5.2 Screenshots of Trello board(s)
-Apr.29
+<Apr.29><Apr.30><br>
 <img src="https://i.imgur.com/PacJrFM.png" width="500">
-Apr.30
 <img src="https://i.imgur.com/ek8Ix2I.png" width="500">
+
 
 
 ## 6. Answers to the Short Answer questions
