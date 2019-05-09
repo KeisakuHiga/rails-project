@@ -206,7 +206,8 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 
 ### Q14. Provide your database schema design.
 
-&nbsp;&nbsp;&nbsp;
+<img src="https://i.imgur.com/MglJNx6.png" width="600"><br>
+
 
 
 ### Q15. Provide User stories for your App.
@@ -216,7 +217,20 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 
 ### Q16. Provide Wireframes for your App.
 
-&nbsp;&nbsp;&nbsp;
+<Hero image><br>
+<img src="https://i.imgur.com/8NGc8QY.jpg" width="600"><br>
+
+<Sign up & update user info.><br>
+<img src="https://i.imgur.com/ZTyYEW6.jpg" width="600"><br>
+
+<Log in><br>
+<img src="https://i.imgur.com/IC3J2pD.jpg"  width="600"><br>
+
+<User information><br>
+<img src="https://i.imgur.com/KpTUmho.jpg"  width="600"><br>
+
+<Requesting page><br>
+<img src="https://i.imgur.com/rCssCih.jpg"  width="600"><br>
 
 
 ### Q17. Describe the way tasks are allocated and tracked in your project.
