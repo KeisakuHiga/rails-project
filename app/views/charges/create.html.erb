@@ -1,2 +1,4 @@
-<h2>Thanks, you paid AU$ <strong><%= (@amount).fdiv(100) %></strong>!</h2>
+<div class="thank-you-for-your-payment">
+  <h2>Thanks, you paid AU$ <%= number_to_currency((@amount).fdiv(100)) %> !</h2>
+</div>
 <%= link_to 'Back', welcome_index_path %>
