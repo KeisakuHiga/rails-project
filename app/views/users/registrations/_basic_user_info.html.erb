@@ -85,7 +85,13 @@
               </tr>
               <tr>
                 <td><%= f.label :"Drivers License photo" %></td>
-                <td><input type="file" name="avatar" id="avatar"></td>
+                <td><%= f.file_field :avatar, autofocus: true %>
+
+                <% if @user.avatar.attached? %>
+                  <%= image_tag @user.avatar, class: 'drivers-license-image-size' %>
+                <% end %>
+                </td>
+                <%# <td><input type="file" name="avatar" id="avatar"></td> %>
               </tr>
               <tr>
                 <td></td>
