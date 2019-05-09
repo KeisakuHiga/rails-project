@@ -45,7 +45,17 @@ The way the project works is there will be two user accounts, loan requesters an
 <a name="3-3"></a>
 
 ### 3.3 Screenshots
+1. Hero image
+<img src="https://i.imgur.com/owpw4Rd.png" width="500">
+2. Sign up page
+<img src="https://i.imgur.com/WV3lZnv.png" width="500"><br>
+<img src="https://i.imgur.com/O3KUgn1.png" width="500"><br>
+3. Log in page
+<img src="https://i.imgur.com/33Wt8vc.png" width="500">
 
+4. Personal info. page
+<img src="https://i.imgur.com/kJJR6Ff.png" width="500"><br>
+<img src="https://i.imgur.com/Amud3nw.png" width="500"><br>
 
 
 <a name="3-4"></a>
