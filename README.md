@@ -33,15 +33,15 @@
 <a name="3"></a>
 
 ## 3. Description of the project
-
+GiveMeMoney is a loan requesting application where users can post requests for loans and other users that are lenders compete with each other to offer the best loan option which leads to lower interest rates.
 <a name="3-1"></a>
 
 ### 3.1 Problem definition / purpose
-
+The problem we are addressing is for people who want quick loans in a competitive marketplace where loans sharks compete against each other for the lowest interest rate to offer the loan requester.
 <a name="3-2"></a>
 
 ### 3.2 Functionality / features
-
+The way the project works is there will be two user accounts, loan requesters and loan offereres. The loan requester puts up a "listing" of the amouunt they require, a financer will then offer there rates on the page against the other offerers. The requester then selects their favourite offer, pays the interest as a down payment then recieves the money.
 <a name="3-3"></a>
 
 ### 3.3 Screenshots
@@ -65,7 +65,7 @@
 <a name="3-5"></a>
 
 ### 3.5 Instructions on how to setup, configure and use the App
-
+First the user signs up as a borrower, posts a listing and waits for offers. The other user signs up as a lender and then goes to the listing the first user made and makes an offer. The borrower user then goes back to that page and can pay the interest amount upfront to accept the loan.
 <a name="4"></a>
 
 ## 4. Design documentation
@@ -77,11 +77,11 @@
 <a name="4-2"></a>
 
 ### 4.2 User stories
-
+Bob is a hardcore gambler. He went out Tuesday night to the casino. He lost all his money, his mortagage payment is due next week and he can't look his wife in the eyes. He knows this could be it for his marriage and he doesn't want to go down the same dark path his father did. He sees a google advert for a cheap loan, he knows he won't be able to pay it back but who is he to care, he needs money now or he's done for. He signs up for an account on GiveMeMoney and puts up a loan request for $3000. The amount for his mortgage payment and a bit more to gamble at the casino. Within minutes he has multiple offers for highly competive interest rates. He takes the option with the longest repayment option. He needs as long as he can to get the monkey off his back; and be able to pay back his debts. Bobs wife was none the wiser, his mortgage payment was in on time. Bob had just bought himself an extra month of relief, all thanks to GiveMeMoney.
 <a name="4-3"></a>
 
 ### 4.3 A workflow diagram of the user journey/s
-
+User clicks Sign up, enters details and decides whether to be a borrower or a lender. If they are a borrrower they then are able to post a listing and view other listings. If they are a lender they are able to then view all listings and post offers competing with other offers. Once the borrower is happy with one of the offers posted on their listing they can select that offer by paying for the interest upfront. The lender can see their offer got accepted on their offers page then they can contact the borrower to organise the transfer of funds.
 <a name="4-4"></a>
 
 ### 4.4 Wireframes
@@ -109,7 +109,7 @@
 ## 6. Answers to the Short Answer questions
 ### Q1. What is the need (i.e. challenge) that you will be addressing in your project?
 	
-&nbsp;&nbsp;&nbsp;The problem we are addressing is for people who want quick loans in a competitive markertplace where loans sharks compete against each other for the lowest interest rate to offer the loan requester.
+&nbsp;&nbsp;&nbsp;The problem we are addressing is for people who want quick loans in a competitive marketplace where loans sharks compete against each other for the lowest interest rate to offer the loan requester.
 
 
 ### Q2. Identify the problem you’re trying to solve by building this particular marketplace App? Why is it a problem that needs solving?
