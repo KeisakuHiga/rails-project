@@ -59,7 +59,7 @@
 8. [Stripe](https://stripe.com/au)
 9. [AWS S3](https://aws.amazon.com/s3/)
 10. [Postgresql](https://www.postgresql.org/)
-
+11. [imgur](https://imgur.com)
 
 
 <a name="3-5"></a>
@@ -102,7 +102,7 @@
 
 ### 5.2 Screenshots of Trello board(s)
 
-![Screenshot of Trello board(Apr 29)](https://github.com/KeisakuHiga/rails-project/tree/k/public/images/SS_Trello_20190429_1700.png)
+![Screenshot of Trello board(Apr 29)](https://i.imgur.com/PacJrFM.png)
 
 
 ## 6. Answers to the Short Answer questions
