@@ -102,23 +102,23 @@
 
 ### 5.2 Screenshots of Trello board(s)
 <Apr.29><br>
-<img src="https://i.imgur.com/PacJrFM.png" width="600">
+<img src="https://i.imgur.com/PacJrFM.png" width="600"><br>
 <Apr.30><br>
-<img src="https://i.imgur.com/ek8Ix2I.png" width="600">
+<img src="https://i.imgur.com/ek8Ix2I.png" width="600"><br>
 <May.01><br>
-<img src="https://i.imgur.com/CLFw5p8.png" width="600">
+<img src="https://i.imgur.com/CLFw5p8.png" width="600"><br>
 <May.02><br>
-<img src="https://i.imgur.com/3opvYZf.png" width="600">
+<img src="https://i.imgur.com/3opvYZf.png" width="600"><br>
 <May.03><br>
-<img src="https://i.imgur.com/xwGG2ky.png" width="600">
+<img src="https://i.imgur.com/xwGG2ky.png" width="600"><br>
 <May.06><br>
-<img src="https://i.imgur.com/IDyvJKy.png" width="600">
+<img src="https://i.imgur.com/IDyvJKy.png" width="600"><br>
 <May.07><br>
-<img src="https://i.imgur.com/E0uycaT.png" width="600">
+<img src="https://i.imgur.com/E0uycaT.png" width="600"><br>
 <May.08><br>
-<img src="https://i.imgur.com/7jEQhVe.png" width="600">
+<img src="https://i.imgur.com/7jEQhVe.png" width="600"><br>
 <May.09><br>
-<img src="" width="600">
+<img src="" width="600"><br>
 
 
 
