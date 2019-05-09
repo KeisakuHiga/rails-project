@@ -18,7 +18,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # POST /resource
   def create
     super
-    @user.avatar.attach(params[:avatar])
+    if !params[:avatar].nil?
+      @user.avatar.attach(params[:avatar])
+    end
     @user.save!
     root_path
   end
@@ -34,7 +36,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def update
     super
     if !params[:avatar].nil?
-    # if @user.avatar == nil
       @user.avatar.attach(params[:avatar])
     end
       @user.save!
