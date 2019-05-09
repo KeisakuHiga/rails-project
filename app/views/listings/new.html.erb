@@ -1,5 +1,7 @@
 <% if current_user.user_type == true %>
-
+<div class="texta">
+  <h1>Create Your New Request</h1>
+</div>
 <div class="new-listing-container">
   <%= form_with scope: :listing, url: listings_path, local: true do |form| %>
     <div class="listing-title">
