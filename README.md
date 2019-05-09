@@ -59,7 +59,6 @@ The way the project works is there will be two user accounts, loan requesters an
 8. [Stripe](https://stripe.com/au)
 9. [AWS S3](https://aws.amazon.com/s3/)
 10. [Postgresql](https://www.postgresql.org/)
-11. [imgur](https://imgur.com)
 
 
 <a name="3-5"></a>
