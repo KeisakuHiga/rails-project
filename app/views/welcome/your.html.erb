@@ -11,8 +11,10 @@
           <%if current_user.id == listing.user_id %>
             <div class="book-card bg-light">
               <div class="book-description">
-                <h4> <%= listing.title %></h4>
-                <p> Description: <%= listing.description %></p>
+                <p>Request # <%= listing.id %></p>
+                <p>Title: <%= listing.title %></p>
+                <p>Requesting amount: <%= listing.amount %></p>
+                <p>Description: <%= listing.description %></p>
               </div>
               <div class="index-page-nav-links">
                 <button><%= link_to "show", listing %></button>

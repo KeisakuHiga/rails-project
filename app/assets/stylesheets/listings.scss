@@ -20,7 +20,7 @@
   text-align: center
 }
 
-.new-listing-container {
+.new-listing-container, .edit-offer-container {
   // display: flex;
   margin: 0 40%;
 }
@@ -47,4 +47,8 @@ input[type="text_area"] {
   h1 {
     margin: 0 8%;
   }  
+}
+
+.add-your-new-offer {
+  margin: 8%;
 }
