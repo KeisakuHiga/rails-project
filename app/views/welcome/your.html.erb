@@ -1,6 +1,6 @@
-<h1>YOUR REQUESTS</h1>
+<div class="texta"><h1>My Loan Requests</h1></div>
 <% if can? :create, Listing %>
-  <%= link_to 'New loan request', new_listing_path %>
+  <div class="texta"><%= button_to "Create New Listing", new_listing_path, class: 'btn btn-primary', :method => "get" %></div>
 <% end %>
 <%if user_signed_in? %>
   <% if current_user.user_type == true %>
@@ -11,7 +11,6 @@
           <%if current_user.id == listing.user_id %>
             <div class="book-card bg-light">
               <div class="book-description">
-                <p>Request # <%= listing.id %></p>
                 <% if listing.status == false %>
                   <h3>REQUESTING</h3>
                 <% else listing.status == true%>
