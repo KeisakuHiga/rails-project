@@ -1,6 +1,6 @@
 <div class="texta" > <h1>All Loan Requests</h1></div>
 <% if can? :create, Listing %>
-  <%= link_to 'Create a New List', new_listing_path %>
+  <div class="texta"><%= button_to "Create New Listing", new_listing_path, class: 'btn btn-primary', :method => "get" %></div>
 <% end %>
 <div class="index-page">
   <div class="bookshelf">
