@@ -115,18 +115,18 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 <a name="5-1"></a>
 
 ### 5.1 Project plan & timeline
-+ Week 1
-- Day 1
-- Day 2
-- Day 3
-- Day 4
-- Day 5
-+ Week 2
-- Day6
-- Day7
-- Day8
-- Day9
-- Day10
+1. Week 1
+* Day 1
+* Day 2
+* Day 3
+* Day 4
+* Day 5
+2. Week 2
+* Day6
+* Day7
+* Day8
+* Day9
+* Day10
 <a name="5-2"></a>
 
 ### 5.2 Screenshots of Trello board(s)
