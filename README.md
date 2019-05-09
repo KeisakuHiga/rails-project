@@ -141,23 +141,21 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 ## 6. Answers to the Short Answer questions
 ### Q1. What is the need (i.e. challenge) that you will be addressing in your project?
 	
-&nbsp;&nbsp;&nbsp;The problem we are addressing is for people who want quick loans in a competitive marketplace where loans sharks compete against each other for the lowest interest rate to offer the loan requester.
-
+&nbsp;&nbsp;&nbsp;People need loans for various reasons. The need we are addressing is for those people to get loans at the best possible terms that work for them.
 
 ### Q2. Identify the problem you’re trying to solve by building this particular marketplace App? Why is it a problem that needs solving?
 
-&nbsp;&nbsp;&nbsp;The problem is that users can't get decent interest rates on there loans sometimes due to going to a single place for a loan. This solves that issue as they can get multiple loan offers and review them.
+&nbsp;&nbsp;&nbsp;When it comes to getting a loan it is hard to pick who to choose as there are so many options and they often don't have to give you the best rate as they are not in direct competition so you have to do your own research which can take ages. With GiveMeMoney lenders have to directly compete with each other to offer you the best rate. Borrowers can quickly and clearly see what the best option is for them and pick that rate making it a superior option to picking loans then what the current marketplace offers.
 
 
 ### Q3. Describe the project will you be conducting and how. your App will address the needs.
 
-&nbsp;&nbsp;&nbsp;The way the project works is there will be two user accounts, loan requesters and loan offereres. The loan requester puts up a "listing" of the amouunt they require, a financer will then offer there rates on the page against the other offerers. The requester then selects their favourite offer, pays the interest as a down payment then recieves the money.
+&nbsp;&nbsp;&nbsp;When it comes to getting a loan it is hard to pick who to choose as there are so many options and they often don't have to give you the best rate as they are not in direct competition so you have to do your own research which can take ages. With GiveMeMoney lenders have to directly compete with each other to offer you the best rate. Borrowers can quickly and clearly see what the best option is for them and pick that rate making it a superior option to picking loans then what the current marketplace offers.
 
 
 ### Q4. Describe the network infrastructure the App may be based on.
-*NEED TO CHECK*
 
-&nbsp;&nbsp;&nbsp;It will be deployed on heroku and created on ruby on rails. 
+&nbsp;&nbsp;&nbsp;The network infrastructure we are using is heroku. Ruby on rais natively works with heroku so there is nothing we need to set up in the backend for the network infrastructure.
 
 ### Q5. Identify and describe the software to be used in your App.
 *REVIST THIS AT END* 
@@ -166,7 +164,7 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 
 ### Q6. Identify the database to be used in your App and provide a justification for your choice.
 
-&nbsp;&nbsp;&nbsp;Postgresql works well with heroku unlike other databases such as sqlite.
+&nbsp;&nbsp;&nbsp;PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads. Postgresql works natively with heroku. It means we don't have to do anything additional to get our site deployed to heroku so to keep things simple we used Postgresql.
 
 
 ### Q7. Identify and describe the production database setup (i.e. postgres instance).
