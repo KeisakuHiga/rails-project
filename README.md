@@ -155,12 +155,12 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 &nbsp;&nbsp;&nbsp; - Designing more
 * Day9<br>
 &nbsp;&nbsp;&nbsp; - Debugging for the image uploading function(part2)<br>
-&nbsp;&nbsp;&nbsp; - Designing more
-&nbsp;&nbsp;&nbsp; - Strating writing README.md
+&nbsp;&nbsp;&nbsp; - Designing more<br>
+&nbsp;&nbsp;&nbsp; - Strating writing README.md<br>
 * Day10<br>
-&nbsp;&nbsp;&nbsp; - Debugging and designing more
-&nbsp;&nbsp;&nbsp; - Finishing README.md
-&nbsp;&nbsp;&nbsp; - Submitting the assignment
+&nbsp;&nbsp;&nbsp; - Debugging and designing more<br>
+&nbsp;&nbsp;&nbsp; - Finishing README.md<br>
+&nbsp;&nbsp;&nbsp; - Submitting the assignment<br>
 
 <a name="5-2"></a>
 
