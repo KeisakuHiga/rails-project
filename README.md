@@ -102,7 +102,7 @@
 
 ### 5.2 Screenshots of Trello board(s)
 
-![Screenshot of Trello board(Apr 29)](https://i.imgur.com/PacJrFM.png)
+![Screenshot of Trello board(Apr 29)](https://i.imgur.com/PacJrFM.png =50x50)
 
 
 ## 6. Answers to the Short Answer questions
