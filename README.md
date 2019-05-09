@@ -117,16 +117,33 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 ### 5.1 Project plan & timeline
 1. Week 1
 * Day 1
+&nbsp;&nbsp;&nbsp; - Discussing and sharing the project(application) ideas each other.
+&nbsp;&nbsp;&nbsp; - Deciding the theme -> “Peer to Peer loan app”
+&nbsp;&nbsp;&nbsp; - Setting up the developing environment (Github, ruby version)
+&nbsp;&nbsp;&nbsp; - Drawing the app's wireframe roughly by handwriting
+&nbsp;&nbsp;&nbsp; - Planning about the project plan
 * Day 2
+&nbsp;&nbsp;&nbsp; - Setting up Trello boad and fill out the tasks to build a MVP for the project
+&nbsp;&nbsp;&nbsp; - Starting the Ruby on rails app and deploying it to Heroku with the basic contents
+&nbsp;&nbsp;&nbsp; - 
 * Day 3
+&nbsp;&nbsp;&nbsp;
 * Day 4
+&nbsp;&nbsp;&nbsp;
 * Day 5
+&nbsp;&nbsp;&nbsp;
 2. Week 2
 * Day6
+&nbsp;&nbsp;&nbsp;
 * Day7
+&nbsp;&nbsp;&nbsp;
 * Day8
+&nbsp;&nbsp;&nbsp;
 * Day9
+&nbsp;&nbsp;&nbsp;
 * Day10
+&nbsp;&nbsp;&nbsp;
+
 <a name="5-2"></a>
 
 ### 5.2 Screenshots of Trello board(s)
