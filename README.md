@@ -45,7 +45,37 @@ The way the project works is there will be two user accounts, loan requesters an
 <a name="3-3"></a>
 
 ### 3.3 Screenshots
-
+1. Hero image<br>
+<img src="https://i.imgur.com/owpw4Rd.png" width="500"><br>
+2. Sign up page<br>
+<img src="https://i.imgur.com/WV3lZnv.png" width="500"><br>
+<img src="https://i.imgur.com/O3KUgn1.png" width="500"><br>
+3. Log in page<br>
+<img src="https://i.imgur.com/33Wt8vc.png" width="500"><br>
+4. Personal info page<br>
+<img src="https://i.imgur.com/kJJR6Ff.png" width="500"><br>
+<img src="https://i.imgur.com/baUazi8.png" width="500"><br>
+5. Update personal info page<br>
+<img src="https://i.imgur.com/sxFKD5N.png" width="500"><br>
+<img src="https://i.imgur.com/Amud3nw.png" width="500"><br>
+6. All loan requests page<br>
+<img src="https://i.imgur.com/99RnZf2.png" width="500"><br>
+7. One request page<br>
+<img src="https://i.imgur.com/oAyiClO.png" width="500"><br>
+<img src="https://i.imgur.com/y3XkBsu.png" width="500"><br>
+(payment page)<br>
+<img src="https://i.imgur.com/nVHhnhN.png" width="500"><br>
+(adding offer sectoin)<br>
+<img src="https://i.imgur.com/qIVOATC.png" width="500"><br>
+8. Create new request page<br>
+<img src="https://i.imgur.com/WGQpWJn.png" width="500"><br>
+9. Update offer page<br>
+<img src="https://i.imgur.com/SxKbLHo.png" width="500"><br>
+10. My requests/offers page<br>
+(Borrower side)<br>
+<img src="https://i.imgur.com/br7FE5B.png" width="500"><br>
+(Lender side)<br>
+<img src="https://i.imgur.com/mP45o7l.png" width="500"><br>
 
 
 <a name="3-4"></a>
@@ -74,6 +104,12 @@ First the user signs up as a borrower, posts a listing and waits for offers. The
 <a name="4-1"></a>
 
 ### 4.1 Design process
+1. Reserching about the two sided-market application design
+3. Picking up some design features based on the research
+2. Drawing the wireframes and deciding the app design
+4. Finding the good materials that can be used for the app
+5. Implementing the materials
+6. Refactoring the codes as the materials can be fit for the app
 
 <a name="4-2"></a>
 
@@ -115,10 +151,57 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 <a name="5-1"></a>
 
 ### 5.1 Project plan & timeline
+#### Week 1st
+* Day 1<br>
+&nbsp;&nbsp;&nbsp; - Discussing and sharing the project(application) ideas each other<br>
+&nbsp;&nbsp;&nbsp; - Deciding the theme -> “Peer to Peer loan app”<br>
+&nbsp;&nbsp;&nbsp; - Setting up the developing environment (Github, ruby version)<br>
+&nbsp;&nbsp;&nbsp; - Drawing the app's wireframe roughly by handwriting<br>
+&nbsp;&nbsp;&nbsp; - Planning about the project plan<br>
+* Day 2<br>
+&nbsp;&nbsp;&nbsp; - Setting up Trello boad and fill out the tasks to build a MVP for the project<br>
+&nbsp;&nbsp;&nbsp; - Starting the Ruby on rails app and deploying it to Heroku with the basic contents<br>
+&nbsp;&nbsp;&nbsp; - Getting the approval about the database ERD<br>
+&nbsp;&nbsp;&nbsp; - Starting coding of application fundations ('Model', 'View', and 'Controller')<br>
+* Day 3<br>
+&nbsp;&nbsp;&nbsp; - Adding the authentication feature by 'Devise' gem<br>
+&nbsp;&nbsp;&nbsp; - Implementing the feature for the app<br>
+* Day 4<br>
+&nbsp;&nbsp;&nbsp; - Adding the authorization feature by 'Cancancan' gem<br>
+&nbsp;&nbsp;&nbsp; - Implementing the feature for the app<br>
+&nbsp;&nbsp;&nbsp; - Using Bootstrap for the main show page to make the look better<br>
+&nbsp;&nbsp;&nbsp; - Implementing more complecated functions such as 'update' and 'delete' data<br>
+* Day 5<br>
+&nbsp;&nbsp;&nbsp; - Adding the payment feature by 'Stripe' gem<br>
+&nbsp;&nbsp;&nbsp; - Adding the image uploading feature by 'AWS S3' servise<br>
+&nbsp;&nbsp;&nbsp; - Implementing the two feature for the app<br>
+
+
+#### Week 2nd
+* Day6<br>
+&nbsp;&nbsp;&nbsp; - Debugging for the payment feature function<br>
+&nbsp;&nbsp;&nbsp; - Debugging for the image uploading function(part1)<br>
+* Day7<br>
+&nbsp;&nbsp;&nbsp; - Adding some new pages depending on user types<br>
+&nbsp;&nbsp;&nbsp; - Designing the app pages by Bootstrap<br>
+&nbsp;&nbsp;&nbsp; - Starging refactoring codes<br>
+* Day8<br>
+&nbsp;&nbsp;&nbsp; - Going through the app and finding the bugs<br>
+&nbsp;&nbsp;&nbsp; - Debugging  the bugs
+&nbsp;&nbsp;&nbsp; - Designing more
+* Day9<br>
+&nbsp;&nbsp;&nbsp; - Debugging for the image uploading function(part2)<br>
+&nbsp;&nbsp;&nbsp; - Designing more<br>
+&nbsp;&nbsp;&nbsp; - Strating writing README.md<br>
+* Day10<br>
+&nbsp;&nbsp;&nbsp; - Debugging and designing more<br>
+&nbsp;&nbsp;&nbsp; - Finishing README.md<br>
+&nbsp;&nbsp;&nbsp; - Submitting the assignment<br>
 
 <a name="5-2"></a>
 
 ### 5.2 Screenshots of Trello board(s)
+[Link of the project Trello board](https://trello.com/b/Gi97qS4B/givememoney)<br><br>
 <Apr.29><br>
 <img src="https://i.imgur.com/PacJrFM.png" width="500"><br>
 <Apr.30><br>
@@ -134,9 +217,9 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 <May.07><br>
 <img src="https://i.imgur.com/E0uycaT.png" width="500"><br>
 <May.08><br>
-<!-- <img src="https://i.imgur.com/7jEQhVe.png" width="500"><br> -->
+<img src="https://i.imgur.com/7jEQhVe.png" width="500"><br>
 <May.09><br>
-<!-- <img src="" width="500"><br> -->
+<img src="https://i.imgur.com/OcPrbYX.png" width="500"><br>
 
 
 
