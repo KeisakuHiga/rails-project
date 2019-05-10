@@ -1,10 +1,9 @@
-<div class="body2">
-<div class="texta">
-<div class="thank-you-for-your-payment">
-<br><br><br><br><br><br><br>
-  <h2>Thanks, you paid AU <%= number_to_currency((@amount).fdiv(100)) %> !</h2>
-</div>
-</div>
-<%= link_to 'Back', welcome_index_path %>
-
+<div class="body2" style="background-image: url(<%= asset_path('piggy.jpg') %>); background-position: center center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover; height: 100vh; position:cover;">
+  <div class="texta">
+    <div class="thank-you-for-your-payment">
+      <br><br><br><br><br><br><br>
+      <h2>Thanks, you paid AU <%= number_to_currency((@amount).fdiv(100)) %> !</h2>
+    </div>
+  </div>
+  <%= button_to 'Back', welcome_index_path, class: 'btn btn-primary', :method => "get" %>
 </div>
