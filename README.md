@@ -104,12 +104,10 @@ First the user signs up as a borrower, posts a listing and waits for offers. The
 <a name="4-1"></a>
 
 ### 4.1 Design process
-1. Reserching about the two sided-market application design
-3. Picking up some design features based on the research
+1. Reserching the two sided-market application design
+3. Choosing some design features based on the research done
 2. Drawing the wireframes and deciding the app design
-4. Finding the good materials that can be used for the app
-5. Implementing the materials
-6. Refactoring the codes as the materials can be fit for the app
+4. Researching useful gems and bootstrap designs to implement
 
 <a name="4-2"></a>
 
@@ -156,26 +154,21 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 * Day 1<br>
 &nbsp;&nbsp;&nbsp; - Discussing and sharing the project(application) ideas each other<br>
 &nbsp;&nbsp;&nbsp; - Deciding the theme -> “Peer to Peer loan app”<br>
-&nbsp;&nbsp;&nbsp; - Setting up the developing environment (Github, ruby version)<br>
+&nbsp;&nbsp;&nbsp; - Setting up the devolopment environment (Github, ruby version)<br>
 &nbsp;&nbsp;&nbsp; - Drawing the app's wireframe roughly by handwriting<br>
-&nbsp;&nbsp;&nbsp; - Planning about the project plan<br>
 * Day 2<br>
-&nbsp;&nbsp;&nbsp; - Setting up Trello boad and fill out the tasks to build a MVP for the project<br>
+&nbsp;&nbsp;&nbsp; - Setting up the Trello boad and filling out the tasks to build a MVP for the project<br>
 &nbsp;&nbsp;&nbsp; - Starting the Ruby on rails app and deploying it to Heroku with the basic contents<br>
-&nbsp;&nbsp;&nbsp; - Getting the approval about the database ERD<br>
-&nbsp;&nbsp;&nbsp; - Starting coding of application fundations ('Model', 'View', and 'Controller')<br>
+&nbsp;&nbsp;&nbsp; - Getting the approval for the database ERD<br>
+&nbsp;&nbsp;&nbsp; - Creating the application foundations ('Model', 'View', and 'Controller')<br>
 * Day 3<br>
-&nbsp;&nbsp;&nbsp; - Adding the authentication feature by 'Devise' gem<br>
-&nbsp;&nbsp;&nbsp; - Implementing the feature for the app<br>
+&nbsp;&nbsp;&nbsp; - Implementing the authentication feature for 'Devise' gem along with the 'cancan' gem for authorization<br>
 * Day 4<br>
-&nbsp;&nbsp;&nbsp; - Adding the authorization feature by 'Cancancan' gem<br>
-&nbsp;&nbsp;&nbsp; - Implementing the feature for the app<br>
-&nbsp;&nbsp;&nbsp; - Using Bootstrap for the main show page to make the look better<br>
-&nbsp;&nbsp;&nbsp; - Implementing more complecated functions such as 'update' and 'delete' data<br>
+&nbsp;&nbsp;&nbsp; - Implementing bootstrap for design. <br>
+&nbsp;&nbsp;&nbsp; - Implementing more complex functions such as 'update' and 'delete' of data<br>
 * Day 5<br>
-&nbsp;&nbsp;&nbsp; - Adding the payment feature by 'Stripe' gem<br>
-&nbsp;&nbsp;&nbsp; - Adding the image uploading feature by 'AWS S3' servise<br>
-&nbsp;&nbsp;&nbsp; - Implementing the two feature for the app<br>
+&nbsp;&nbsp;&nbsp; - Adding the payment feature 'Stripe' gem<br>
+&nbsp;&nbsp;&nbsp; - Adding the image uploading feature 'AWS S3'<br>
 
 
 #### Week 2nd
@@ -184,16 +177,15 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 &nbsp;&nbsp;&nbsp; - Debugging for the image uploading function(part1)<br>
 * Day7<br>
 &nbsp;&nbsp;&nbsp; - Adding some new pages depending on user types<br>
-&nbsp;&nbsp;&nbsp; - Designing the app pages by Bootstrap<br>
-&nbsp;&nbsp;&nbsp; - Starging refactoring codes<br>
+&nbsp;&nbsp;&nbsp; - Designing the app pages with Bootstrap<br>
+&nbsp;&nbsp;&nbsp; - Starting refactoring codes<br>
 * Day8<br>
 &nbsp;&nbsp;&nbsp; - Going through the app and finding the bugs<br>
-&nbsp;&nbsp;&nbsp; - Debugging  the bugs
-&nbsp;&nbsp;&nbsp; - Designing more
+&nbsp;&nbsp;&nbsp; - Debugging the bugs
 * Day9<br>
 &nbsp;&nbsp;&nbsp; - Debugging for the image uploading function(part2)<br>
-&nbsp;&nbsp;&nbsp; - Designing more<br>
-&nbsp;&nbsp;&nbsp; - Strating writing README.md<br>
+&nbsp;&nbsp;&nbsp; - Using more bootstrap<br>
+&nbsp;&nbsp;&nbsp; - Starting to write README.md<br>
 * Day10<br>
 &nbsp;&nbsp;&nbsp; - Debugging and designing more<br>
 &nbsp;&nbsp;&nbsp; - Finishing README.md<br>
@@ -260,22 +252,28 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 
 ### Q8. Describe the architecture of your App.
 
-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; Our app is based on ruby on rails which incorporates the MVC model. MVC stands for Model - View - Controller. They stand for the following:
+
+Model - Handles the object data. An exmaple of this in our app is the loan request object under the name "Listing" under the file "listing.rb" Each individual listing is created based off this model class.
+
+View - The actual pages the user sees. An example of this is the new.html.erb in the views/users/registrations folder. That contains the actual html and css styling that the user will see when creating their account.
+
+Controller - Handles the functions that the user clicks on to create, update and delete data. An example of this is when the user creates a loan request on the loan requests page it calls the "def new" function in the listings_controller.rb
 
 
 ### Q9. Explain the different high-level components (abstractions) in your App.
 
-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; Active record is a very useful abstraction as it doesn't require you to understand lower-level based sql archiecture and instead means you can write it almost in english. Form helpers also make a huge help with options like "link_to" and the like meaning you don't have to write out lots of html and css code for your view pages.
 
 
 ### Q10. Detail any third party services that your App will use.
 
-&nbsp;&nbsp;&nbsp;Heroku is a ruby on rails supported hosting site that we will be using for deployment of our project. The image uploading will use AWS S3 which is amazons cloud service. For the payment structure we will be using stripe which both validates and takes credit card payments. For emailing a confirmation for sign up we will use Mailgun.
+&nbsp;&nbsp;&nbsp;Heroku is a ruby on rails supported hosting site that we will be using for deployment of our project. The image uploading will use AWS S3 which is amazons cloud service. For the payment structure we will be using stripe which both validates and takes credit card payments. 
 
 
 ### Q11. Describe (in general terms) the data structure of marketplace apps that are similar to your own (e.g. eBay, Airbnb).
 
-&nbsp;&nbsp;&nbsp;ratesetter.com.au is quite similar in that it is peer to peer lending, as does societyone.com.au and a few other p2p lenders exist as well. As far as the technology goes fiverr.com is quite similar as it also uses ruby on rails for a double sided marketplace.
+&nbsp;&nbsp;&nbsp;ratesetter.com.au is quite similar in that it is peer to peer lending, as does societyone.com.au and a few other p2p lenders exist as well. As far as the technology goes fiverr.com is quite similar as it also uses ruby on rails for a double-sided marketplace.
 
 
 ### Q12. Discuss the database relations to be implemented.
@@ -324,28 +322,30 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 
 ### Q18. Discuss how Agile methodology is being implemented in your project.
 
-&nbsp;&nbsp;&nbsp;We are using agile every day by having a stand up in the morning to discuss what we did the day before, what the problems were and what we are doing today. We then write code quickly and test it, then upload it to github for the other person to access then we review the code and upload to heroku to do the final test to make sure it works.
+&nbsp;&nbsp;&nbsp;We are using agile every day by having a stand up in the morning to discuss what we did the day before, what the problems were and what we are doing today. We then write code quickly and test it, then upload it to github for the other person to access. We then review the code and upload to heroku to do the final test to make sure it works.
 
 
 ### Q19. Provide an overview and description of your Source control process.
 
 &nbsp;&nbsp;&nbsp;We are using github for the Source control process. The way we use it is that after one of us makes a change we make a push request to github in our own branches. We then create a pull request to merge it with the master branch which the other person then reviews the code changes and goes over why they made those changes. We then merge the code and pull to our local machines.
 
+This is the best way to do it as there is no risk to damaging the working code as we have multiple checks and balances as outlined above. This also has the benefit of keeping both of us informed to the others code changes so we are always on the same page.
+
 
 ### Q20. Provide an overview and description of your Testing process.
 
-&nbsp;&nbsp;&nbsp;We have created different listings and user types in the seeds.rb file. After resetting the database after major changes we can then check manually that all the listing types work correctly.
+&nbsp;&nbsp;&nbsp;We have created different listings and user types in the seeds.rb file. After resetting the database after major changes we can then check manually that all the listing types work correctly and all the calculations are correct. In hindsight it would of been beneficial to include some minitests in as well to save some time as manual testing can be quite slow and tedious. 
 
 
 ### Q21. Discuss and analyse requirements related to information system security.
 
-&nbsp;&nbsp;&nbsp;Since our application uses user accounts with there own permissions based off what type they are we have used devise for setting them up and protecting their info. For permissions on what certain users can access we have used cancan.
+&nbsp;&nbsp;&nbsp;Since our application uses user accounts with there own permissions based off what type they are we have used devise for setting them up and protecting their info. For permissions on what certain users can access we have used cancan and if and else statements.
 
 
 ### Q22. Discuss methods you will use to protect information and data.
 
-&nbsp;&nbsp;&nbsp;We have put all the private keys on the heroku database which is secure and made sure to not upload those keys to github or anywhere public.
+&nbsp;&nbsp;&nbsp;We have put all the private keys on the heroku database which is secure and made sure to not upload those keys to github or anywhere public using .git ignore.
 
 ### Q23. Research what your legal obligations are in relation to handling user data.
 
-&nbsp;&nbsp;&nbsp;We need to comply with Australian data privacy laws which means thats users cannot see others user information. Passwords can also not be visible to either users or us as well and needs proper encrytion so only the user can know the password.
+&nbsp;&nbsp;&nbsp;We need to comply with Australian data privacy laws which means thats users cannot see others user information. Passwords can also not be visible to either users or us as well and needs proper encrytion so only the user can know the password. We also can not share/sell the user data we have access to viewing without a proper legal write up which we can't afford.
