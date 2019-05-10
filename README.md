@@ -119,6 +119,7 @@ Bob is a hardcore gambler. He went out Tuesday night to the casino. He lost all 
 
 ### 4.3 A workflow diagram of the user journey/s
 User clicks Sign up, enters details and decides whether to be a borrower or a lender. If they are a borrrower they then are able to post a listing and view other listings. If they are a lender they are able to then view all listings and post offers competing with other offers. Once the borrower is happy with one of the offers posted on their listing they can select that offer by paying for the interest upfront. The lender can see their offer got accepted on their offers page then they can contact the borrower to organise the transfer of funds.
+<img src="https://i.imgur.com/2OdTlJH.jpg"><br>
 <a name="4-4"></a>
 
 ### 4.4 Wireframes
