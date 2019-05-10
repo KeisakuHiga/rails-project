@@ -236,9 +236,8 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 &nbsp;&nbsp;&nbsp;The network infrastructure we are using is heroku. Ruby on rais natively works with heroku so there is nothing we need to set up in the backend for the network infrastructure.
 
 ### Q5. Identify and describe the software to be used in your App.
-*REVIST THIS AT END* 
 
-&nbsp;&nbsp;&nbsp;We are using ruby on rails with the devise gem to authenticate users, the cancancan gem for authorization. Stripe for the down payments on the interest. Faker to help seed the data as well. Bootstrap for the design.
+&nbsp;&nbsp;&nbsp;We are using ruby on rails with the devise gem to authenticate users, the cancancan gem for authorization. Stripe for the payment system we will use when users pay the down payment for interest. Faker to help seed the data which helps us create test conditions. Bootstrap for the actual design of the website.
 
 ### Q6. Identify the database to be used in your App and provide a justification for your choice.
 
@@ -247,8 +246,7 @@ User clicks Sign up, enters details and decides whether to be a borrower or a le
 
 ### Q7. Identify and describe the production database setup (i.e. postgres instance).
 
-&nbsp;&nbsp;&nbsp;
-
+&nbsp;&nbsp;&nbsp; PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads. Postgresql works natively with heroku.
 
 ### Q8. Describe the architecture of your App.
 
